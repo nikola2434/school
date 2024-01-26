@@ -7,13 +7,10 @@ declare module "*.jpeg";
 declare module "*.gif";
 
 declare module "*.svg" {
-  import React from "react";
-  const SVG: React.FC<React.SVGProps<SVGSVGElement>>;
-  export default SVG;
-  //   import React = require('react');
-  //   export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
-  //   const src: string;
-  //   export default src;
+  import React = require("react");
+  export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
+  const src: string;
+  export default src;
 }
 
 type JSONValue = string | number | boolean | null | JSONArray | JSONObject;

@@ -11,9 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./src/Components/*"],
-      "@utils/*": ["./src/Utils/*"],
-      "@UI/*": ["./src/Components/UI/*"]
+      "@screens/*": ["./src/Components/Screens*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },

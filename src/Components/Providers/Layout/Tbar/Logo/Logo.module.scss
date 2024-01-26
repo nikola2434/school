@@ -1,0 +1,11 @@
+.logo {
+  fill: var(--txt_color);
+  box-sizing: border-box;
+  > svg {
+    margin-right: 16px;
+  }
+  cursor: pointer;
+  > svg:last-child {
+    margin-right: 0px;
+  }
+}
