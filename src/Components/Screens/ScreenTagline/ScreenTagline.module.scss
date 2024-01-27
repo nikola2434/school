@@ -1,0 +1,56 @@
+.tagline {
+  background-color: var(--bg_color);
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: -1;
+    width: calc(100vw - 200px);
+    height: calc(100vw - 200px);
+    border-radius: 50%;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(140, 44, 255, 0) 73%,
+      rgba(140, 44, 255, 0.4) 100%
+    );
+  }
+  .container {
+    z-index: 2;
+    margin-top: 64px;
+    border-width: 1px, 0px, 1px, 0px;
+
+    border-style: solid;
+    color: var(--txt_color);
+    border-color: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(
+        0deg,
+        rgba(118, 118, 117, 0.05),
+        rgba(118, 118, 117, 0.05)
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+    backdrop-filter: blur(20px);
+    padding: 86px 100px 97px 100px;
+    > h1 {
+      font-weight: 700;
+      font-size: 50px;
+      text-align: center;
+      > strong {
+        color: var(--hover_color);
+      }
+    }
+    > p {
+      font-weight: 400;
+      font-size: 24px;
+      color: var(--txt_color);
+      text-align: center;
+    }
+  }
+}
