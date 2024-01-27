@@ -1,0 +1,48 @@
+.screen {
+  position: relative;
+  width: 100%;
+  padding: 90px 100px 0 100px;
+  color: var(--txt_color);
+  .main_header {
+    font-size: 60px;
+    font-weight: 700;
+    width: 650px;
+    line-height: 63px;
+    text-transform: uppercase;
+  }
+  .container_secondary_head {
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 63px;
+    .secondary_header {
+      font-size: 60px;
+      font-weight: 700;
+      text-transform: uppercase;
+      > strong {
+        color: var(--hover_color);
+        display: block;
+      }
+      > span {
+        font-size: 24px;
+      }
+    }
+  }
+  .footer {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    .container_info {
+      margin-left: 25px;
+      .info {
+        font-weight: 400;
+        font-size: 24px;
+        color: var(--txt_secondary_color);
+      }
+      .date {
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+  }
+}

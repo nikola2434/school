@@ -1,0 +1,36 @@
+.button {
+  padding: 25px 40px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+
+  background: linear-gradient(
+      0deg,
+      rgba(118, 118, 117, 0.15),
+      rgba(118, 118, 117, 0.15)
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+
+  > span {
+    margin-left: 20px;
+    color: var(--hover_color);
+  }
+
+  &:hover {
+    box-shadow: 2px 4px 10px 0px rgba(140, 44, 255, 0.45);
+    background: linear-gradient(
+        0deg,
+        rgba(231, 231, 231, 0.15),
+        rgba(231, 231, 231, 0.15)
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15)
+      );
+  }
+}
