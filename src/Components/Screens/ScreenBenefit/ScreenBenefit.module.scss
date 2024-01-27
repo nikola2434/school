@@ -1,0 +1,26 @@
+.screen {
+  padding: 100px 100px 50px 100px;
+  background-color: var(--bg_color);
+  color: var(--txt_color);
+  > h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  > div {
+    padding: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    border-top: 1px solid rgba(118, 118, 117, 1);
+    border-bottom: 1px solid rgba(118, 118, 117, 1);
+    display: flex;
+    align-items: center;
+    .ellipse {
+        margin-right: 20px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--txt_color);
+    }
+  }
+}

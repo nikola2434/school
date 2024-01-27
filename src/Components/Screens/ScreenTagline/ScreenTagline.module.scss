@@ -21,11 +21,9 @@
   .container {
     z-index: 2;
     margin-top: 64px;
-    border-width: 1px, 0px, 1px, 0px;
-
-    border-style: solid;
+    border-top: 1px solid rgba(118, 118, 117, 1);
+    border-bottom: 1px solid rgba(118, 118, 117, 1);
     color: var(--txt_color);
-    border-color: rgba(255, 255, 255, 0.15);
     background: linear-gradient(
         0deg,
         rgba(118, 118, 117, 0.05),
