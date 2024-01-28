@@ -6,8 +6,8 @@ import Spikers from "../../../../../../public/Images/Spikers.svg";
 
 export const Logo: FC = () => {
   return (
-    <a className={style.logo}>
-      <LogoBMSTU/>
+    <a className={style.logo} href="#main">
+      <LogoBMSTU />
       <Spikers />
       <LogoRBPO />
     </a>

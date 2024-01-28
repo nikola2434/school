@@ -14,7 +14,7 @@ import Yadro from "@public/Speakers/yadro.svg";
 
 export const SpeakersScreen: FC = () => {
   return (
-    <div className={style.screen}>
+    <div id="speakers" className={style.screen}>
       <h1>Спикеры</h1>
       <div className={style.row}>
         <a

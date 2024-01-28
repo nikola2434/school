@@ -6,7 +6,7 @@ import { MainBackground } from "./MainBackground/MainBackground";
 export const MainScreen: FC = () => {
   return (
     <MainBackground>
-      <div className={style.screen}>
+      <div id="main" className={style.screen}>
         <div className={style.mute} />
         <h1 className={style.main_header}>школа фундаментальных технологий</h1>
         <div className={style.container_secondary_head}>
