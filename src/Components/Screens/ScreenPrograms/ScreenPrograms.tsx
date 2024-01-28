@@ -44,7 +44,7 @@ export const ScreenPrograms: FC = () => {
             </>
           }
           open={false}
-          typeFigure={1}
+          typeFigure={2}
         >
           <>
             <div className={style.lecture_body}>
@@ -73,7 +73,7 @@ export const ScreenPrograms: FC = () => {
             </>
           }
           open={false}
-          typeFigure={1}
+          typeFigure={3}
         >
           <>
             <div className={style.lecture_body}>
@@ -102,7 +102,7 @@ export const ScreenPrograms: FC = () => {
             </>
           }
           open={false}
-          typeFigure={1}
+          typeFigure={4}
         >
           <>
             <div className={style.lecture_body}>
@@ -133,7 +133,7 @@ export const ScreenPrograms: FC = () => {
             </>
           }
           open={false}
-          typeFigure={1}
+          typeFigure={5}
         >
           <>
             <div className={style.lecture_body}>
@@ -164,7 +164,7 @@ export const ScreenPrograms: FC = () => {
             </>
           }
           open={false}
-          typeFigure={1}
+          typeFigure={6}
         >
           <>
             <div className={style.lecture_body}>

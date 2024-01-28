@@ -22,13 +22,57 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   return (
     <div className={style.bg_container}>
       <div className={style.container}>
-        {typeFigure === 1 && (
-          <div className={style.type_1}>
-            <div className={style.type_1_1}></div>
-            <div className={style.type_1_2}></div>
+        {typeFigure === 1 && <div className={style.type_1}></div>}
+        {typeFigure === 2 && (
+          <div className={style.type_2}>
+            <div className={style.type_2_1}>
+              <div></div>
+            </div>
+            <div className={style.type_2_1}>
+              <div />
+            </div>
+            <div className={style.type_2_1}>
+              <div />
+            </div>
           </div>
         )}
-        {typeFigure === 2 && <div className={style.type_2} />}
+        {typeFigure === 3 && (
+          <div className={style.type_3}>
+            <div className={style.type_3_1}>
+              <div></div>
+            </div>
+            <div className={style.type_3_2}>
+              <div />
+            </div>
+            <div className={style.type_3_3}>
+              <div />
+            </div>
+          </div>
+        )}
+        {typeFigure === 4 && (
+          <div className={style.type_4}>
+            <div className={style.type_4_1}></div>
+            <div className={style.type_4_2}>
+              <div></div>
+            </div>
+          </div>
+        )}
+        {typeFigure === 5 && (
+          <div className={style.type_5}>
+            <div className={style.type_5_1}></div>
+            <div className={style.type_5_2}></div>
+          </div>
+        )}
+        {typeFigure === 6 && (
+          <div className={style.type_6}>
+            <div className={style.type_6_1}>
+              <div />
+            </div>
+            <div className={style.type_6_2}>
+              <div />
+            </div>
+          </div>
+        )}
       </div>
       <div className={style.collapse}>
         <div className={style.label} onClick={() => setIsActive(!isActive)}>
