@@ -9,7 +9,7 @@ export default (env: BuildOptions) => {
     html: path.resolve(__dirname, "public", "index.html"),
     public: path.resolve(__dirname, "public"),
     src: path.resolve(__dirname, "src", "main.tsx"),
-    output: path.resolve(__dirname, "..", "build-sandbox"),
+    output: path.resolve(__dirname, "build"),
   };
 
   const config: Configuration = buildWebpack({
