@@ -20,18 +20,26 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
 }) => {
   const [isActive, setIsActive] = useState(open);
   return (
-    <div className={style.collapse}>
+    <div className={style.bg_container}>
       <div className={style.container}>
-        {typeFigure === 1 && <div className={style.type_1} />}
+        {typeFigure === 1 && (
+          <div className={style.type_1}>
+            <div className={style.type_1_1}></div>
+            <div className={style.type_1_2}></div>
+          </div>
+        )}
+        {typeFigure === 2 && <div className={style.type_2} />}
       </div>
-      <div className={style.label} onClick={() => setIsActive(!isActive)}>
-        {label}
-        <span
-          className={cn(style.closeIcon, { [style.activeIcon]: isActive })}
-        />
-      </div>
-      <div className={cn(style.content, { [style.active]: isActive })}>
-        {children}
+      <div className={style.collapse}>
+        <div className={style.label} onClick={() => setIsActive(!isActive)}>
+          {label}
+          <span
+            className={cn(style.closeIcon, { [style.activeIcon]: isActive })}
+          />
+        </div>
+        <div className={cn(style.content, { [style.active]: isActive })}>
+          {children}
+        </div>
       </div>
     </div>
   );
