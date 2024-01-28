@@ -1,0 +1,23 @@
+.screen {
+  background-color: var(--bg_color);
+  color: var(--txt_color);
+  padding: 50px 100px;
+  > h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .link {
+    color: var(--txt_secondary_color);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--hover_color);
+    }
+  }
+}

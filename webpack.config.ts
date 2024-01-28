@@ -18,6 +18,7 @@ export default (env: BuildOptions) => {
     paths,
     alias: {
       "@screens": path.resolve(__dirname, "src", "Components", "Screens"),
+      "@public": path.resolve(__dirname, "public"),
     },
   });
 

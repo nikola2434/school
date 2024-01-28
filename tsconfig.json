@@ -11,7 +11,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@screens/*": ["./src/Components/Screens*"]
+      "@screens/*": ["./src/Components/Screens*"],
+      "@public/*": ["./public/*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },

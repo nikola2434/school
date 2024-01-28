@@ -5,6 +5,7 @@ import { MainProvider } from "./Components/Providers/MainProvider";
 import { ScreenInfo } from "./Components/Screens/ScreenInfo/ScreenInfo";
 import { ScreenTagline } from "@screens//ScreenTagline/ScreenTagline";
 import { ScreenBenefit } from "@screens//ScreenBenefit/ScreenBenefit";
+import { SpeakersScreen } from "@screens//SpeakersScreen/SpeakersScreen";
 
 export const Main: FC = () => {
   return (
@@ -13,6 +14,7 @@ export const Main: FC = () => {
       <ScreenInfo />
       <ScreenTagline />
       <ScreenBenefit />
+      <SpeakersScreen />
     </MainProvider>
   );
 };
