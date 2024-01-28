@@ -1,6 +1,6 @@
 import { FC } from "react";
 import style from "./Links.module.scss";
-import IconTG from "./tg.svg";
+import IconTG from "./Tg.svg";
 
 export const Links: FC = () => {
   return (
