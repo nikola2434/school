@@ -11,7 +11,8 @@ $width_circle: calc(100vh - 204px);
     z-index: -1;
     position: absolute;
     top: 0px;
-    left: -25%;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
     align-items: center;
     .container_first {
@@ -94,8 +95,21 @@ $width_circle: calc(100vh - 204px);
         top: 50%;
         transform: translate(0, -50%);
         background-color: rgba(255, 255, 255, 0.4);
-        transform: rotate(-135deg);
+        transform: rotate(0deg);
+        animation: rotate 60s linear infinite;
       }
     }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
