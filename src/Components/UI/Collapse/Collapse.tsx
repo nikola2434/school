@@ -21,10 +21,18 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   const [isActive, setIsActive] = useState(open);
   return (
     <div className={style.collapse}>
-      <div className={style.label}>
-        {label} <span className={style.closeIcon} />
+      <div className={style.container}>
+        {typeFigure === 1 && <div className={style.type_1} />}
       </div>
-      <div className={style.content}>{children}</div>
+      <div className={style.label} onClick={() => setIsActive(!isActive)}>
+        {label}
+        <span
+          className={cn(style.closeIcon, { [style.activeIcon]: isActive })}
+        />
+      </div>
+      <div className={cn(style.content, { [style.active]: isActive })}>
+        {children}
+      </div>
     </div>
   );
 };

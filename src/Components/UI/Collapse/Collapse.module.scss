@@ -1,7 +1,75 @@
 .collapse {
   position: relative;
+  padding: 30px 35px;
+  border: 1px solid #767675;
+  margin-bottom: 20px;
+  .label {
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    user-select: none;
+    color: var(--txt_color);
+    .closeIcon {
+      position: absolute;
+      top: 30px;
+      right: 45px;
+      width: 30px;
+      height: 30px;
+      transition: all 0.3s ease-in-out;
+      transform-origin: 15px 15px;
+      color: var(--txt_color);
+      //   background-color: red;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    &:hover .closeIcon {
+      color: var(--hover_color);
+    }
+    .activeIcon {
+      transform: rotate(-45deg);
+    }
+  }
 
-  .label{
-    
+  .content {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .active {
+    height: 160px;
+  }
+
+  .type_1 {
+    width: 390px;
+    height: 390px;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(
+      50% 100% at 50% 100%,
+      rgba(140, 44, 255, 0) 34.5%,
+      rgba(140, 44, 255, 0.4) 100%
+    );
+  }
+
+  .container {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    z-index: -1;
   }
 }
