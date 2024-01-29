@@ -18,6 +18,7 @@ export const buildPlugins = (
           from: `./config.${isProd ? "prod" : "dev"}.json`,
           to: "./config.json",
         },
+        { from: "./libs", to: "./libs" },
       ],
     }),
   ];

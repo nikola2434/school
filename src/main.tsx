@@ -12,13 +12,15 @@ import { Footer } from "@screens//Footer/Footer";
 export const Main: FC = () => {
   return (
     <MainProvider>
-      <MainScreen />
-      <ScreenInfo />
-      <ScreenTagline />
-      <ScreenBenefit />
-      <SpeakersScreen />
-      <ScreenPrograms />
-      <Footer />
+      <div id=".content">
+        <MainScreen />
+        <ScreenInfo />
+        <ScreenTagline />
+        <ScreenBenefit />
+        <SpeakersScreen />
+        <ScreenPrograms />
+        <Footer />
+      </div>
     </MainProvider>
   );
 };

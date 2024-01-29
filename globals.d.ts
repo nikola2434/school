@@ -23,4 +23,7 @@ interface JSONObject {
 
 interface Window {
   config?: Partial<Record<string, JSONValue>>;
+  gsap?: any;
+  ScrollTrigger?: any;
+  ScrollSmoother?: any;
 }
