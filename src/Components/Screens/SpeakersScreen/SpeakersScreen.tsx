@@ -48,8 +48,6 @@ export const SpeakersScreen: FC = () => {
         >
           <Axiom />
         </a>
-      </div>
-      <div className={style.row}>
         <a href="https://www.ispras.ru/" target="_blank" className={style.link}>
           <Isprun />
         </a>

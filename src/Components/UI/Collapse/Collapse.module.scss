@@ -261,3 +261,41 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .collapse {
+    padding: 20px 25px;
+    .label {
+      .closeIcon {
+        width: 20px;
+        height: 20px;
+        transform-origin: 10px 10px;
+        top: 20px;
+        right: 25px;
+        &::after,
+        &::before {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .collapse {
+    padding: 15px;
+    .label {
+      .closeIcon {
+        width: 15px;
+        height: 15px;
+        transform-origin: 7px 7px;
+        top: 15px;
+        right: 18px;
+        &::after,
+        &::before {
+          width: 15px;
+        }
+      }
+    }
+  }
+}

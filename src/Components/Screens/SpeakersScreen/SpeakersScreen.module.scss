@@ -13,12 +13,41 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
   }
   .link {
     color: var(--txt_secondary_color);
     transition: all 0.3s ease-in-out;
     &:hover {
       color: var(--hover_color);
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .screen {
+    padding: 25px 50px;
+    > h1 {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .screen {
+    padding: 20px;
+    > h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .row {
+      gap: 5px;
+      justify-content: center;
+    }
+    .link {
+      transform: translateX(-10px) scale(0.9);
     }
   }
 }

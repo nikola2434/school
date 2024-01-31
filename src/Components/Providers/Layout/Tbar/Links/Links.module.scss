@@ -34,3 +34,12 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .navBar {
+    margin-top: 10px;
+    .link:first-child {
+      padding: 5px 10px 5px 0px;
+    }
+  }
+}

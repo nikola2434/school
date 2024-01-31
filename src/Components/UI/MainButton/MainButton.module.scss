@@ -16,6 +16,8 @@
     linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
 
   > span {
+    width: 20px;
+    height: 18px;
     margin-left: 20px;
     color: var(--hover_color);
   }
@@ -32,5 +34,18 @@
         rgba(255, 255, 255, 0.15),
         rgba(255, 255, 255, 0.15)
       );
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    padding: 18px 25px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button {
+    transform: scale(0.75) translate(-45px, 0);
   }
 }

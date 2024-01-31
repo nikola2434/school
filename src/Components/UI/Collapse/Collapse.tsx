@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, ReactNode, useState } from "react";
+import { FC, PropsWithChildren, ReactNode, useRef, useState } from "react";
 import style from "./Collapse.module.scss";
 import cn from "classnames";
 
@@ -19,6 +19,19 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   open = false,
 }) => {
   const [isActive, setIsActive] = useState(open);
+  const contentElem = useRef<null | HTMLDivElement>(null);
+
+  function onClick() {
+    if (!contentElem.current) return;
+
+    if (isActive) {
+      contentElem.current.style.height = null;
+    } else {
+      contentElem.current.style.height =
+        contentElem.current.scrollHeight + "px";
+    }
+    setIsActive(!isActive);
+  }
   return (
     <div className={style.bg_container}>
       <div className={style.container}>
@@ -75,13 +88,13 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
         )}
       </div>
       <div className={style.collapse}>
-        <div className={style.label} onClick={() => setIsActive(!isActive)}>
+        <div className={style.label} onClick={onClick}>
           {label}
           <span
             className={cn(style.closeIcon, { [style.activeIcon]: isActive })}
           />
         </div>
-        <div className={cn(style.content, { [style.active]: isActive })}>
+        <div ref={contentElem} className={cn(style.content)}>
           {children}
         </div>
       </div>

@@ -35,3 +35,53 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .screen {
+    padding: 25px 50px;
+    > h1 {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-size: 18px;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .lecture_body {
+      margin-top: 20px;
+      .speaker {
+        font-size: 14px;
+      }
+      > h4 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .screen {
+    padding: 20px;
+    > h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+    .title {
+      font-size: 18px;
+    }
+    .lecture_body {
+      margin-top: 20px;
+      .speaker {
+        font-size: 10px;
+      }
+      > h4 {
+        font-size: 14px;
+      }
+    }
+  }
+}

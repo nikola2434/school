@@ -43,6 +43,8 @@ $width_circle: calc(100vh - 204px);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
     .link {
       display: block;
       font-weight: 400;
@@ -57,6 +59,53 @@ $width_circle: calc(100vh - 204px);
         transition: all 0.3s ease-in-out;
         &:hover {
           opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .footer {
+    padding: 50px;
+    > h1 {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      gap: 20px;
+      .link {
+        > h6 {
+          font-size: 16px;
+        }
+        > a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 20px;
+    > h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .container {
+      display: block;
+      > div {
+        margin-bottom: 20px;
+      }
+      .link {
+        > h6 {
+          font-size: 14px;
+        }
+        > a {
+          font-size: 12px;
         }
       }
     }

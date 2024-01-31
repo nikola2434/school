@@ -52,3 +52,37 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .tagline {
+    .container {
+      margin-top: 50px;
+      padding: 50px;
+      > h1 {
+        font-size: 35px;
+        text-align: left;
+      }
+      > p {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .tagline {
+    .container {
+      margin-top: 20px;
+      padding: 25px 20px;
+      > h1 {
+        font-size: 24px;
+        text-align: left;
+      }
+      > p {
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -12,3 +12,17 @@
   width: 100%;
   border-bottom: 1px solid var(--txt_secondary_color);
 }
+
+@media (max-width: 800px) {
+  .tbar {
+    padding: 30px 50px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tbar {
+    padding: 20px;
+    display: block;
+  }
+}
