@@ -8,6 +8,7 @@ import { ScreenBenefit } from "@screens//ScreenBenefit/ScreenBenefit";
 import { SpeakersScreen } from "@screens//SpeakersScreen/SpeakersScreen";
 import { ScreenPrograms } from "@screens//ScreenPrograms/ScreenPrograms";
 import { Footer } from "@screens//Footer/Footer";
+import { ScreenCompletion } from "@screens//ScreenCompletion/Completion";
 
 export const Main: FC = () => {
   return (
@@ -17,6 +18,7 @@ export const Main: FC = () => {
       <ScreenTagline />
       <ScreenBenefit />
       <SpeakersScreen />
+      <ScreenCompletion />
       <ScreenPrograms />
       <Footer />
     </MainProvider>

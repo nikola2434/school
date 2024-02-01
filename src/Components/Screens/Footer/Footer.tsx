@@ -20,7 +20,9 @@ export const Footer: FC = () => {
         </div>
         <div className={style.link}>
           <h6>МГТУ им. Н.Э. Баумана</h6>
-          <a>t.me/bmstu1830</a>
+          <a href="https://t.me/bmstu1830" target="_blank">
+            t.me/bmstu1830
+          </a>
         </div>
         <MainButton>Регистрация на курс</MainButton>
       </div>
