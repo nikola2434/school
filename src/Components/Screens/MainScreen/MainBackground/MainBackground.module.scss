@@ -3,6 +3,7 @@ $width_circle: calc(100vh - 204px);
 .bg {
   width: 100%;
   height: calc(100vh - 104px);
+  min-height: 420px;
   position: relative;
   overflow: hidden;
   .container {
