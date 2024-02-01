@@ -16,7 +16,9 @@ export const Footer: FC = () => {
       <div className={style.container}>
         <div className={style.link}>
           <h6>Чат-бот мероприятия</h6>
-          <a>t.me/name</a>
+          <a href="https://t.me/RBPO_bot/?start=start" target="_blank">
+            t.me/RBPO_bot
+          </a>
         </div>
         <div className={style.link}>
           <h6>МГТУ им. Н.Э. Баумана</h6>
@@ -24,7 +26,12 @@ export const Footer: FC = () => {
             t.me/bmstu1830
           </a>
         </div>
-        <MainButton>Регистрация на курс</MainButton>
+        <MainButton
+          href="https://forms.yandex.ru/u/65ba63fbeb61460b91183250/"
+          target="_blank"
+        >
+          Регистрация на курс
+        </MainButton>
       </div>
     </div>
   );

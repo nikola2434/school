@@ -14,7 +14,11 @@ export const Links: FC = () => {
       <a className={style.link} href="#contacts">
         Контакты
       </a>
-      <a href="#" className={style.link_tg}>
+      <a
+        href="https://t.me/RBPO_bot/?start=start"
+        target="_blank"
+        className={style.link_tg}
+      >
         <IconTG />
       </a>
     </nav>

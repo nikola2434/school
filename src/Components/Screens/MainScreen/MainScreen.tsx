@@ -16,7 +16,12 @@ export const MainScreen: FC = () => {
           <span>от ведущих экспертов индустрии</span>
         </div>
         <div className={style.footer}>
-          <MainButton>Регистрация на курс</MainButton>
+          <MainButton
+            href="https://forms.yandex.ru/u/65ba63fbeb61460b91183250/"
+            target="_blank"
+          >
+            Регистрация на курс
+          </MainButton>
           <div className={style.container_info}>
             <div className={style.info}>старт цикла лекций</div>
             <div className={style.date}>март 2024</div>

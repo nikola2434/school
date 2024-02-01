@@ -45,3 +45,10 @@ h5,
 h6 {
   margin: 0px;
 }
+
+@media (max-width: 650px) {
+  html,
+  body {
+    scroll-padding-top: 126px;
+  }
+}
