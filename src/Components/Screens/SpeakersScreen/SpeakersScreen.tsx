@@ -11,35 +11,15 @@ import Postgres from "@public/Speakers/postgres.svg";
 import Profiscope from "@public/Speakers/profiscope.svg";
 import Redsoft from "@public/Speakers/redsoft.svg";
 import Yadro from "@public/Speakers/yadro.svg";
+import VeMake from "@public/Speakers/weMake.svg";
 
 export const SpeakersScreen: FC = () => {
   return (
     <div id="speakers" className={style.screen}>
       <h1>Спикеры</h1>
       <div className={style.row}>
-        <a
-          href="https://www.red-soft.ru/ru/"
-          target="_blank"
-          className={style.link}
-        >
-          <Redsoft />
-        </a>
-        <a
-          href="https://www.kaspersky.ru/"
-          target="_blank"
-          className={style.link}
-        >
-          <Kaspersky />
-        </a>
-        <a href="https://basistech.ru/" target="_blank" className={style.link}>
-          <Basis />
-        </a>
-        <a
-          href="https://www.basealt.ru/"
-          target="_blank"
-          className={style.link}
-        >
-          <Alt />
+        <a href="https://www.ispras.ru/" target="_blank" className={style.link}>
+          <Isprun />
         </a>
         <a
           href="https://axiomjdk.ru/pages/axiom-jdk/"
@@ -48,8 +28,28 @@ export const SpeakersScreen: FC = () => {
         >
           <Axiom />
         </a>
-        <a href="https://www.ispras.ru/" target="_blank" className={style.link}>
-          <Isprun />
+        <a href="https://yadro.com/" target="_blank" className={style.link}>
+          <Yadro />
+        </a>
+        <a href="https://basistech.ru/" target="_blank" className={style.link}>
+          <Basis />
+        </a>
+        <a
+          href="https://www.red-soft.ru/ru/"
+          target="_blank"
+          className={style.link}
+        >
+          <Redsoft />
+        </a>
+        <a
+          href="https://wemake.services/"
+          target="_blank"
+          className={style.link}
+        >
+          <VeMake />
+        </a>
+        <a href="https://luntry.ru/" target="_blank" className={style.link}>
+          <Luntry />
         </a>
         <a href="https://profiscope.io/" target="_blank" className={style.link}>
           <Profiscope />
@@ -61,11 +61,19 @@ export const SpeakersScreen: FC = () => {
         >
           <Postgres />
         </a>
-        <a href="https://luntry.ru/" target="_blank" className={style.link}>
-          <Luntry />
+        <a
+          href="https://www.kaspersky.ru/"
+          target="_blank"
+          className={style.link}
+        >
+          <Kaspersky />
         </a>
-        <a href="https://yadro.com/" target="_blank" className={style.link}>
-          <Yadro />
+        <a
+          href="https://www.basealt.ru/"
+          target="_blank"
+          className={style.link}
+        >
+          <Alt />
         </a>
         <a href="https://fstec.ru/" target="_blank" className={style.link}>
           <Fstek />
