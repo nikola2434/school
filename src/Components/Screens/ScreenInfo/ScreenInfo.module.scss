@@ -84,7 +84,7 @@
       .block_4 {
         padding: 30px;
         height: 215px;
-        border: 1px solid var(--hover_color);
+        border: 1px solid rgba(255, 255, 255, 0.4);
         border-radius: 0px 30px 30px 0px;
         width: 100%;
         margin-right: 20px;
@@ -93,9 +93,9 @@
         justify-content: space-between;
         align-items: start;
         flex-direction: column;
-        .number {
-          color: var(--hover_color);
-        }
+        // .number {
+        //   color: var(--hover_color);
+        // }
       }
     }
   }

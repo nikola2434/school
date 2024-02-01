@@ -1,6 +1,16 @@
-import { FC, PropsWithChildren, ReactNode, useRef, useState } from "react";
+import {
+  FC,
+  PropsWithChildren,
+  ReactNode,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import style from "./Collapse.module.scss";
 import cn from "classnames";
+import { useResizeObserver } from "@hooks/useResizeObserve";
 
 // супер в падлу был0 делать что-то стоящее поэтому это
 
@@ -19,7 +29,9 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   open = false,
 }) => {
   const [isActive, setIsActive] = useState(open);
-  const contentElem = useRef<null | HTMLDivElement>(null);
+  const contentElem = useRef<HTMLDivElement | null>(null);
+  const labelElem = useRef<HTMLDivElement | null>(null);
+  const containerElem = useRef<HTMLDivElement | null>(null);
 
   function onClick() {
     if (!contentElem.current) return;
@@ -32,9 +44,27 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
     }
     setIsActive(!isActive);
   }
+
+  useEffect(() => {
+    if (!labelElem.current) return;
+
+    const resizeObserve = new ResizeObserver(([entry]) => {
+      if (!entry || !containerElem.current) return;
+
+      const heightLabel =
+        entry.borderBoxSize[0]?.blockSize ??
+        entry.target.getBoundingClientRect().height;
+
+      containerElem.current.style.height = heightLabel + "px";
+    });
+
+    resizeObserve.observe(labelElem.current);
+
+    return () => resizeObserve.disconnect();
+  }, []);
   return (
     <div className={style.bg_container}>
-      <div className={style.container}>
+      <div className={style.container} ref={containerElem}>
         {typeFigure === 1 && <div className={style.type_1}></div>}
         {typeFigure === 2 && (
           <div className={style.type_2}>
@@ -88,7 +118,7 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
         )}
       </div>
       <div className={style.collapse}>
-        <div className={style.label} onClick={onClick}>
+        <div className={style.label} onClick={onClick} ref={labelElem}>
           {label}
           <span
             className={cn(style.closeIcon, { [style.activeIcon]: isActive })}

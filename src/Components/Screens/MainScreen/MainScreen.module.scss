@@ -1,6 +1,7 @@
 .screen {
   position: relative;
   width: 100%;
+  overflow: hidden;
   padding: 90px 100px 0 100px;
   color: var(--txt_color);
   .main_header {
@@ -45,7 +46,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .screen {
     padding: 50px 50px 0px 50px;
     .main_header {

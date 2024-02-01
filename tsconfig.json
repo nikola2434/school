@@ -12,7 +12,8 @@
     "baseUrl": ".",
     "paths": {
       "@screens/*": ["./src/Components/Screens*"],
-      "@public/*": ["./public/*"]
+      "@public/*": ["./public/*"],
+      "@hooks/*": ["./src/Utils/hooks/*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },

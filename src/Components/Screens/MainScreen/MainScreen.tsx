@@ -11,7 +11,7 @@ export const MainScreen: FC = () => {
         <h1 className={style.main_header}>школа фундаментальных технологий</h1>
         <div className={style.container_secondary_head}>
           <h1 className={style.secondary_header}>
-            разработки <strong>безопасности по</strong>
+            разработки <strong>безопасного ПО</strong>
           </h1>
           <span>от ведущих экспертов индустрии</span>
         </div>

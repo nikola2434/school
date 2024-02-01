@@ -16,7 +16,7 @@ export const ScreenInfo: FC = () => {
         <div className={style.row}>
           <div className={style.block_1}>
             <div className={style.number}>/01</div>
-            <div className={style.content}>Цикл из 6 лекций</div>
+            <div className={style.content}>Цикл из 12 лекций</div>
           </div>
           <div className={style.block_2}>
             <div className={style.number}>/02</div>

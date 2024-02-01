@@ -18,7 +18,7 @@
     font-size: 40px;
   }
   .lecture_body {
-    margin-top: 35px;
+    margin: 0px 35px;
     .speaker {
       font-weight: 400;
       font-size: 16px;
@@ -32,6 +32,10 @@
       > strong {
         color: var(--hover_color);
       }
+    }
+    > h4:last-child {
+      margin: 0;
+      margin-bottom: 35px;
     }
   }
 }
@@ -50,12 +54,17 @@
       font-size: 24px;
     }
     .lecture_body {
-      margin-top: 20px;
+      margin: 0 25px;
       .speaker {
         font-size: 14px;
       }
       > h4 {
         font-size: 18px;
+        margin-bottom: 10px;
+      }
+      > h4:last-child {
+        margin: 0;
+        margin-bottom: 25px;
       }
     }
   }
@@ -75,12 +84,17 @@
       font-size: 18px;
     }
     .lecture_body {
-      margin-top: 20px;
+      margin: 0 15px;
       .speaker {
-        font-size: 10px;
+        font-size: 14px;
       }
       > h4 {
-        font-size: 14px;
+        font-size: 10px;
+        margin-bottom: 0px;
+      }
+      > h4:last-child {
+        margin: 0;
+        margin-bottom: 15px;
       }
     }
   }

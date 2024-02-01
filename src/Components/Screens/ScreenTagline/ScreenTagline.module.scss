@@ -1,16 +1,17 @@
 .tagline {
   background-color: var(--bg_color);
-  height: 440px;
+
   overflow: hidden;
   position: relative;
   z-index: -1;
   .circle {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: -1;
-    width: calc(100vw - 200px);
-    height: calc(100vw - 200px);
+    width: 1124px;
+    height: 1124px;
     border-radius: 50%;
     background: radial-gradient(
       50% 50% at 50% 50%,
@@ -35,7 +36,7 @@
         rgba(255, 255, 255, 0.05)
       );
     backdrop-filter: blur(20px);
-    padding: 86px 100px 97px 100px;
+    padding: 86px 100px 50px 100px;
     > h1 {
       font-weight: 700;
       font-size: 50px;
