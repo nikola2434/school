@@ -15,13 +15,13 @@ export const Footer: FC = () => {
       <h1>контакты</h1>
       <div className={style.container}>
         <div className={style.link}>
-          <h6>Чат-бот мероприятия</h6>
+          <span>Чат-бот мероприятия</span>
           <a href="https://t.me/RBPO_bot/?start=start" target="_blank">
             t.me/RBPO_bot
           </a>
         </div>
         <div className={style.link}>
-          <h6>МГТУ им. Н.Э. Баумана</h6>
+          <span>МГТУ им. Н.Э. Баумана</span>
           <a href="https://t.me/bmstu1830" target="_blank">
             t.me/bmstu1830
           </a>

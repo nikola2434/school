@@ -50,7 +50,7 @@ $width_circle: calc(100vh - 204px);
     .link {
       display: block;
       font-weight: 400;
-      > h6 {
+      > span {
         font-size: 18px;
         margin-bottom: 8px;
       }
@@ -78,7 +78,7 @@ $width_circle: calc(100vh - 204px);
     .container {
       gap: 20px;
       .link {
-        > h6 {
+        > span {
           font-size: 16px;
         }
         > a {
@@ -103,7 +103,7 @@ $width_circle: calc(100vh - 204px);
         margin-bottom: 20px;
       }
       .link {
-        > h6 {
+        > span {
           font-size: 14px;
         }
         > a {
