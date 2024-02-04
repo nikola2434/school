@@ -15,7 +15,7 @@ import VeMake from "@public/Speakers/weMake.svg";
 
 export const SpeakersScreen: FC = () => {
   return (
-    <div id="speakers" className={style.screen}>
+    <section id="speakers" className={style.screen}>
       <h1>Спикеры</h1>
       <div className={style.row}>
         <a href="https://www.ispras.ru/" target="_blank" className={style.link}>
@@ -79,6 +79,6 @@ export const SpeakersScreen: FC = () => {
           <Fstek />
         </a>
       </div>
-    </div>
+    </section>
   );
 };

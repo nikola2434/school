@@ -3,7 +3,7 @@ import { FC, PropsWithChildren } from "react";
 
 export const MainBackground: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={style.bg}>
+    <section className={style.bg}>
       <div className={style.container}>
         <div className={style.container_first}>
           <div className={style.circle_first} />
@@ -18,6 +18,6 @@ export const MainBackground: FC<PropsWithChildren> = ({ children }) => {
         </div>
       </div>
       {children}
-    </div>
+    </section>
   );
 };

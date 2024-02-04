@@ -3,7 +3,7 @@ import style from "./ScreenTagline.module.scss";
 
 export const ScreenTagline: FC = () => {
   return (
-    <div className={style.tagline}>
+    <section className={style.tagline}>
       <div className={style.circle}></div>
       <div className={style.container}>
         <h1>
@@ -14,6 +14,6 @@ export const ScreenTagline: FC = () => {
         В МГТУ им. Н.Э. Баумана в период с марта по май состоится уникальный цикл лекций от российских IT компаний - лидеров своих направлений, посвященный фундаментальным информационным технологиям, их развитию в России и в мире.
         </p>
       </div>
-    </div>
+    </section>
   );
 };

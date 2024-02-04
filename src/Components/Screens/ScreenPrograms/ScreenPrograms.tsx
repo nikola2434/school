@@ -4,7 +4,7 @@ import { Collapse } from "../../UI/Collapse/Collapse";
 
 export const ScreenPrograms: FC = () => {
   return (
-    <div id="programs" className={style.screen}>
+    <section id="programs" className={style.screen}>
       <h1>программа</h1>
       <div>
         <Collapse
@@ -184,6 +184,6 @@ export const ScreenPrograms: FC = () => {
           </>
         </Collapse>
       </div>
-    </div>
+    </section>
   );
 };

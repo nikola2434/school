@@ -4,7 +4,7 @@ import { MainButton } from "../../UI/MainButton";
 
 export const Footer: FC = () => {
   return (
-    <div id="contacts" className={style.footer}>
+    <footer id="contacts" className={style.footer}>
       <div className={style.bg_container}>
         <div className={style.circle_first}></div>
         <div className={style.circle_first}></div>
@@ -33,6 +33,6 @@ export const Footer: FC = () => {
           Регистрация на курс
         </MainButton>
       </div>
-    </div>
+    </footer>
   );
 };

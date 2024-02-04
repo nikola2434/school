@@ -3,15 +3,15 @@ import style from "./ScreenInfo.module.scss";
 
 export const ScreenInfo: FC = () => {
   return (
-    <div className={style.info}>
+    <section className={style.info}>
       <h1>
         СТРОЙКА НАЧИНАЕТСЯ С ФУНДАМЕНТА, А <strong>IT</strong> С ФУНДАМЕНТАЛЬНЫХ
         <strong> ТЕХНОЛОГИЙ</strong>
       </h1>
-      <span>
+      <p>
         Цель программы — ознакомить студентов и участников сообщества РБПО с
         актуальными IT-технологиями, создаваемыми в России.
-      </span>
+      </p>
       <div className={style.container}>
         <div className={style.row}>
           <div className={style.block_1}>
@@ -38,6 +38,6 @@ export const ScreenInfo: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

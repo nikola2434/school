@@ -5,9 +5,9 @@ import { Links } from "./Links/Links";
 
 export const Tbar: FC = () => {
   return (
-    <div className={style.tbar}>
+    <header className={style.tbar}>
       <Logo />
       <Links />
-    </div>
+    </header>
   );
 };

@@ -8,20 +8,24 @@
     margin-bottom: 50px;
     text-transform: uppercase;
   }
-  > div {
-    padding: 30px;
-    font-size: 24px;
-    font-weight: 400;
-    border-top: 1px solid rgba(118, 118, 117, 1);
-    border-bottom: 1px solid rgba(118, 118, 117, 1);
-    display: flex;
-    align-items: center;
-    .ellipse {
-      margin-right: 20px;
-      min-width: 9px;
-      min-height: 9px;
-      border-radius: 50%;
-      background: var(--txt_color);
+  > uL {
+    list-style-type: none;
+    padding: 0px;
+    > li {
+      padding: 30px;
+      font-size: 24px;
+      font-weight: 400;
+      border-top: 1px solid rgba(118, 118, 117, 1);
+      border-bottom: 1px solid rgba(118, 118, 117, 1);
+      display: flex;
+      align-items: center;
+      .ellipse {
+        margin-right: 20px;
+        min-width: 9px;
+        min-height: 9px;
+        border-radius: 50%;
+        background: var(--txt_color);
+      }
     }
   }
 }
