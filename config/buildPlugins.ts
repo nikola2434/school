@@ -18,6 +18,14 @@ export const buildPlugins = (
           from: `./config.${isProd ? "prod" : "dev"}.json`,
           to: "./config.json",
         },
+        {
+          from: "./public",
+          to: ".",
+          filter: (resourcePath) => {
+            if (resourcePath.includes("index.html")) return false;
+            return true;
+          },
+        },
       ],
     }),
   ];
