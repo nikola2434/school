@@ -2,6 +2,7 @@
 @import "./variables.scss";
 @font-face {
   font-family: "ALS Sector Regular Regular";
+  font-display: swap;
   src: url("../../fonts/595030bb520f1e2ab2fb4e8d7c5f30a5.woff2") format("woff2"),
     url("../../fonts/595030bb520f1e2ab2fb4e8d7c5f30a5.woff") format("woff");
 }
