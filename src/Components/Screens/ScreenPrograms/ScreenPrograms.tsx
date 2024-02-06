@@ -28,7 +28,8 @@ export const ScreenPrograms: FC = () => {
                 <strong> / 12:00 — 15:00</strong>
               </div>
               <div className={style.speaker}>
-                АО «Лаборатория Касперского» / Владимир Малыгин
+                АО «Лаборатория Касперского» / Сергей Викторович Рогачев,
+                руководитель отдела разработки безопасной платформы
               </div>
               <div className={style.title_lecture}>
                 Уточняется
@@ -52,8 +53,8 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ООО «Постгрес Профессиональный» / «Postgres Professional» / Иван
-                Панченко
+                ООО «Постгрес Профессиональный» / «Postgres Professional» /
+                «Postgres Professional» / Иван Панченко
               </div>
               <div className={style.title_lecture}>
                 Уточняется
@@ -81,9 +82,12 @@ export const ScreenPrograms: FC = () => {
         >
           <>
             <div className={style.lecture_body}>
-              <div className={style.speaker}>«YADRO» / Александр Дубинин</div>
+              <div className={style.speaker}>
+                «YADRO» / Александр Александрович Дубинин эксперт по
+                информационной безопасности
+              </div>
               <div className={style.title_lecture}>
-                Уточняется
+                Контейнеризация и виртуализация - вчера, сегодня, завтра
                 <strong> / 12:00 — 15:00</strong>
               </div>
               <div className={style.speaker}>ООО «Базис» / Дмитрий Сорокин</div>
@@ -108,10 +112,10 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ООО «БЕЛЛСОФТ» / «Axiom JDK» / Дмитрий Самерсов
+                «Axiom JDK» / Дмитрий Самерсов
               </div>
               <div className={style.title_lecture}>
-                JVM Internals (Внутреннее устройство виртуальной машины Java)
+                Java VM - внутреннее устройство и принципы работы
                 <strong> / 12:00 — 15:00</strong>
               </div>
               <div className={style.speaker}>
