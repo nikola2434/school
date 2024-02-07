@@ -6,11 +6,15 @@ export const ScreenPrograms: FC = () => {
   return (
     <section id="programs" className={style.screen}>
       <h1>программа</h1>
+      <h2>
+        Системное программное обеспечение. Фундаментальные технологии сквозь
+        призму безопасной разработки.
+      </h2>
       <div>
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>6 марта</div>
+              <div className={style.subtitle}>2-ая неделя марта</div>
               <div className={style.title}>Операционные системы</div>
             </>
           }
@@ -41,7 +45,7 @@ export const ScreenPrograms: FC = () => {
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>20 марта</div>
+              <div className={style.subtitle}>март, 4-ая неделя</div>
               <div className={style.title}>
                 Система управления базами данных
               </div>
@@ -53,8 +57,8 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ООО «Постгрес Профессиональный» / «Postgres Professional» /
-                «Postgres Professional» / Иван Панченко
+                ООО «Постгрес Профессиональный» / «Postgres Professional» / Иван
+                Панченко
               </div>
               <div className={style.title_lecture}>
                 Уточняется
@@ -73,7 +77,7 @@ export const ScreenPrograms: FC = () => {
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>9 апреля</div>
+              <div className={style.subtitle}>апрель, 2-ая неделя</div>
               <div className={style.title}>Виртуализация и контейнеризация</div>
             </>
           }
@@ -102,7 +106,7 @@ export const ScreenPrograms: FC = () => {
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>22 апреля</div>
+              <div className={style.subtitle}>апрель, 4-ая неделя</div>
               <div className={style.title}>Интерпретаторы</div>
             </>
           }
@@ -131,13 +135,14 @@ export const ScreenPrograms: FC = () => {
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>15 мая</div>
+              <div className={style.subtitle}>май, 2-ая неделя</div>
               <div className={style.title}>
                 Разработка безопасного программного обеспечения
               </div>
             </>
           }
-          open={false}
+          open={true}
+          select={true}
           typeFigure={5}
         >
           <>
@@ -159,10 +164,14 @@ export const ScreenPrograms: FC = () => {
             </div>
           </>
         </Collapse>
+        <h2>
+          Практическая безопасность программного обеспечения и информационных
+          систем.
+        </h2>
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>28 мая</div>
+              <div className={style.subtitle}>май, 4-ая неделя</div>
               <div className={style.title}>
                 Композиционный и компонентный анализ
               </div>

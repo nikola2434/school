@@ -25,7 +25,7 @@ export const ScreenCompletion = () => {
           программного обеспечения
         </li>
         <li>
-          <span className={style.ellipse} /> Просто массу приятных впечатлений.
+          <span className={style.ellipse} /> Просто массу приятных впечатлений
         </li>
       </ul>
     </section>

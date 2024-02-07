@@ -43,7 +43,7 @@ $width_circle: calc(100vh - 204px);
   }
   .container {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
@@ -52,9 +52,10 @@ $width_circle: calc(100vh - 204px);
       font-weight: 400;
       > div {
         font-size: 18px;
-        margin-bottom: 8px;
       }
       > a {
+        display: block;
+        margin-top: 8px;
         font-size: 16px;
         color: var(--txt_secondary_color);
         cursor: pointer;

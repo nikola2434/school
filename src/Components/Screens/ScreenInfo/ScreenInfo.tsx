@@ -5,8 +5,8 @@ export const ScreenInfo: FC = () => {
   return (
     <section className={style.info}>
       <h1>
-        СТРОЙКА НАЧИНАЕТСЯ С ФУНДАМЕНТА, А <strong>IT</strong> С ФУНДАМЕНТАЛЬНЫХ
-        <strong> ТЕХНОЛОГИЙ</strong>
+        СТРОЙКА НАЧИНАЕТСЯ С ФУНДАМЕНТА, А <strong>IT</strong> - С
+        ФУНДАМЕНТАЛЬНЫХ <strong> ТЕХНОЛОГИЙ</strong>
       </h1>
       <p>
         Цель программы — ознакомить студентов и участников сообщества РБПО с

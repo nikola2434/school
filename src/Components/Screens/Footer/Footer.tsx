@@ -25,6 +25,7 @@ export const Footer: FC = () => {
           <a href="https://t.me/bmstu1830" target="_blank">
             t.me/bmstu1830
           </a>
+          <a href="mailto:sdl-school@mail.ru">sdl-school@mail.ru</a>
         </div>
         <MainButton
           href="https://forms.yandex.ru/u/65ba63fbeb61460b91183250/"

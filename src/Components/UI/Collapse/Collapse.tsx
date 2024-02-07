@@ -2,7 +2,6 @@ import {
   FC,
   PropsWithChildren,
   ReactNode,
-  useCallback,
   useEffect,
   useLayoutEffect,
   useRef,
@@ -10,7 +9,6 @@ import {
 } from "react";
 import style from "./Collapse.module.scss";
 import cn from "classnames";
-import { useResizeObserver } from "@hooks/useResizeObserve";
 
 // супер в падлу был0 делать что-то стоящее поэтому это
 
@@ -20,6 +18,7 @@ interface CollapseProps {
   label: ReactNode;
   open?: boolean;
   typeFigure?: TypeFigure;
+  select?: boolean;
 }
 
 export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
@@ -27,6 +26,7 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   children,
   typeFigure = 1,
   open = false,
+  select = false,
 }) => {
   const [isActive, setIsActive] = useState(open);
   const contentElem = useRef<HTMLDivElement | null>(null);
@@ -34,16 +34,19 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   const containerElem = useRef<HTMLDivElement | null>(null);
 
   function onClick() {
+    setIsActive(!isActive);
+  }
+
+  useLayoutEffect(() => {
     if (!contentElem.current) return;
 
-    if (isActive) {
+    if (!isActive) {
       contentElem.current.style.height = null;
     } else {
       contentElem.current.style.height =
         contentElem.current.scrollHeight + "px";
     }
-    setIsActive(!isActive);
-  }
+  }, [isActive]);
 
   useEffect(() => {
     if (!labelElem.current) return;
@@ -62,6 +65,7 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
 
     return () => resizeObserve.disconnect();
   }, []);
+
   return (
     <div className={style.bg_container}>
       <div className={style.container} ref={containerElem}>
@@ -117,7 +121,7 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
           </div>
         )}
       </div>
-      <div className={style.collapse}>
+      <div className={cn(style.collapse, { [style.collapse_select]: select })}>
         <div className={style.label} onClick={onClick} ref={labelElem}>
           {label}
           <span
