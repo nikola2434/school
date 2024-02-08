@@ -7,8 +7,8 @@ export const ScreenPrograms: FC = () => {
     <section id="programs" className={style.screen}>
       <h1>программа</h1>
       <h2>
-        Системное программное обеспечение. Фундаментальные технологии сквозь
-        призму безопасной разработки.
+        Блок 1. Системное программное обеспечение. Фундаментальные технологии
+        сквозь призму безопасной разработки
       </h2>
       <div>
         <Collapse
@@ -24,7 +24,8 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ООО «Базальт СПО» / Георгий Курячий
+                ООО «Базальт СПО» / Георгий Владимирович Курячий, ведущий
+                разработчик
               </div>
               <div className={style.title_lecture}>
                 Операционные системы на основе ядра Linux: сообщество,
@@ -36,7 +37,7 @@ export const ScreenPrograms: FC = () => {
                 руководитель отдела разработки безопасной платформы
               </div>
               <div className={style.title_lecture}>
-                Уточняется
+                Микроядерные операционные системы. Summa Technologiae
                 {/* <strong> / 15:30 — 18:30</strong> */}
               </div>
             </div>
@@ -57,8 +58,8 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ООО «Постгрес Профессиональный» / «Postgres Professional» / Иван
-                Панченко
+                Postgres Professional / Иван Евгеньевич Панченко, заместитель
+                генерального директора
               </div>
               <div className={style.title_lecture}>
                 Уточняется
@@ -87,7 +88,7 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                «YADRO» / Александр Александрович Дубинин эксперт по
+                «YADRO» / Александр Александрович Дубинин, эксперт по
                 информационной безопасности
               </div>
               <div className={style.title_lecture}>
@@ -148,14 +149,16 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ФСТЭК России / <strong>Виталий Сергеевич Лютиков</strong>
+                ФСТЭК России / <strong>Виталий Сергеевич Лютиков</strong>,
+                заместитель директора
               </div>
               <div className={style.title_lecture}>
                 Уточняется
                 {/* <strong> / 12:00 — 15:30</strong> */}
               </div>
               <div className={style.speaker}>
-                ИСП РАН / <strong>Арутюн Ишханович Аветисян</strong>
+                ИСП РАН / <strong>Арутюн Ишханович Аветисян</strong>, директор,
+                академик РАН
               </div>
               <div className={style.title_lecture}>
                 Уточняется
@@ -165,8 +168,8 @@ export const ScreenPrograms: FC = () => {
           </>
         </Collapse>
         <h2>
-          Практическая безопасность программного обеспечения и информационных
-          систем.
+          Блок 2. Практическая безопасность программного обеспечения и
+          информационных систем
         </h2>
         <Collapse
           label={
@@ -189,9 +192,7 @@ export const ScreenPrograms: FC = () => {
                 Композиционный анализ сторонних компонентов
                 {/* <strong> / 12:00 — 15:00</strong> */}
               </div>
-              <div className={style.speaker}>
-                ООО «КлаудРан» / «Luntry» / Дмитрий Евдокимов
-              </div>
+              <div className={style.speaker}>«Luntry» / Дмитрий Евдокимов</div>
               <div className={style.title_lecture}>
                 Безопасность инфраструктур под управлением оркестратора
                 Kubernetes

@@ -48,7 +48,7 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
     }
   }, [isActive]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!labelElem.current) return;
 
     const resizeObserve = new ResizeObserver(([entry]) => {
@@ -59,6 +59,10 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
         entry.target.getBoundingClientRect().height;
 
       containerElem.current.style.height = heightLabel + "px";
+
+    //   if (!contentElem.current) return;
+    //   contentElem.current.style.height =
+    //     contentElem.current.scrollHeight + "px";
     });
 
     resizeObserve.observe(labelElem.current);
