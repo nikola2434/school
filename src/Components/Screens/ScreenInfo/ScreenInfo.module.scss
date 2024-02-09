@@ -36,6 +36,11 @@
       .content {
         font-weight: 400;
         font-size: 18px;
+        > strong {
+          white-space: nowrap;
+          font-weight: 400;
+          font-size: 18px;
+        }
       }
       .number {
         font-size: 16px;

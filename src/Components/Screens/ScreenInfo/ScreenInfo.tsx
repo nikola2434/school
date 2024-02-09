@@ -33,7 +33,8 @@ export const ScreenInfo: FC = () => {
           <div className={style.block_4}>
             <div className={style.number}>/04</div>
             <div className={style.content}>
-              Цикл лекций организован при поддержке ФСТЭК России
+              Цикл лекций организован при поддержке
+              <strong> ФСТЭК России</strong>
             </div>
           </div>
         </div>
