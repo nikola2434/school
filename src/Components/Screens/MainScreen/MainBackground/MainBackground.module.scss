@@ -3,7 +3,7 @@ $width_circle: calc(100vh - 204px);
 .bg {
   width: 100%;
   height: calc(100vh - 104px);
-  min-height: 420px;
+  min-height: 650px;
   position: relative;
   overflow: hidden;
   .container {
@@ -17,7 +17,7 @@ $width_circle: calc(100vh - 204px);
 
     overflow: hidden;
     min-width: 100vw;
-    min-height: calc(100vh - 104px);
+    min-height: 650px;
     display: flex;
     align-items: center;
     .container_first {
@@ -26,13 +26,13 @@ $width_circle: calc(100vh - 204px);
       border: 0.52px solid rgba(255, 255, 255, 0.4);
       width: $width_circle;
       height: $width_circle;
-      min-width: 400px;
-      min-height: 400px;
+      min-width: 50vw;
+      min-height: 50vw;
       .circle_first {
         width: calc($width_circle / 1.20495);
         height: calc($width_circle / 1.20495);
-        min-width: 340px;
-        min-height: 340px;
+        min-width: 41vw;
+        min-height: 41vw;
         background: radial-gradient(
           50% 50% at 50% 50%,
           rgba(140, 44, 255, 0) 43%,
@@ -60,13 +60,13 @@ $width_circle: calc(100vh - 204px);
       border: 0.52px solid rgba(255, 255, 255, 0.4);
       width: $width_circle;
       height: $width_circle;
-      min-width: 400px;
-      min-height: 400px;
+      min-width: 50vw;
+      min-height: 50vw;
       .circle_second {
         width: calc($width_circle / 1.20495);
         height: calc($width_circle / 1.20495);
-        min-width: 340px;
-        min-height: 340px;
+        min-width: 41vw;
+        min-height: 41vw;
         box-shadow: 2.0834622383117676px 4.6877899169921875px
           17.86568832397461px 7.812983512878418px rgba(57, 18, 106, 1);
         position: absolute;
@@ -85,13 +85,13 @@ $width_circle: calc(100vh - 204px);
       border: 0.52px solid rgba(255, 255, 255, 0.4);
       height: $width_circle;
       width: $width_circle;
-      min-width: 400px;
-      min-height: 400px;
+      min-width: 50vw;
+      min-height: 50vw;
       .circle_third {
         width: calc($width_circle / 1.5688);
         height: calc($width_circle / 1.5688);
-        min-width: 260px;
-        min-height: 260px;
+        min-width: 33vw;
+        min-height: 33vw;
         background: radial-gradient(
           50% 50% at 50% 50%,
           rgba(140, 44, 255, 0) 73%,
@@ -115,6 +115,24 @@ $width_circle: calc(100vh - 204px);
         transform: rotate(0deg);
         animation: rotate 60s linear infinite;
       }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .bg {
+    min-height: 500px;
+    .container {
+      min-height: 500px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .bg {
+    min-height: 400px;
+    .container {
+      min-height: 400px;
     }
   }
 }

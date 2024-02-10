@@ -20,8 +20,8 @@ $width_circle: calc(100vh - 204px);
       border: 1px solid rgba(255, 255, 255, 0.4);
       width: $width_circle;
       height: $width_circle;
-      min-height: 600px;
-      min-width: 600px;
+      min-height: 45vw;
+      min-width: 45vw;
       position: relative;
       border-radius: 50%;
       .line {
