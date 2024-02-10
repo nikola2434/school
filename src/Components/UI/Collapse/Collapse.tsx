@@ -60,15 +60,15 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
 
       containerElem.current.style.height = heightLabel + "px";
 
-    //   if (!contentElem.current) return;
-    //   contentElem.current.style.height =
-    //     contentElem.current.scrollHeight + "px";
+      if (!contentElem.current || !isActive) return;
+      contentElem.current.style.height =
+        contentElem.current.scrollHeight + "px";
     });
 
     resizeObserve.observe(labelElem.current);
 
     return () => resizeObserve.disconnect();
-  }, []);
+  }, [isActive]);
 
   return (
     <div className={style.bg_container}>
