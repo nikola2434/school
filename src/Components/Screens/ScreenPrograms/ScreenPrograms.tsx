@@ -66,10 +66,11 @@ export const ScreenPrograms: FC = () => {
                 {/* <strong> / 12:00 - 15:00 </strong> */}
               </div>
               <div className={style.speaker}>
-                ООО «Ред Софт» / Роман Симаков
+                ООО «Ред Софт» / Роман Александрович Симаков, директор
+                департамента развития системных продуктов
               </div>
               <div className={style.title_lecture}>
-                Уточняется
+                Реляционные БД и их роль при построении безопасных ИС
                 {/* <strong> / 15:30 — 18:30</strong> */}
               </div>
             </div>
@@ -95,7 +96,14 @@ export const ScreenPrograms: FC = () => {
                 Контейнеризация и виртуализация - вчера, сегодня, завтра
                 {/* <strong> / 12:00 — 15:00</strong> */}
               </div>
-              <div className={style.speaker}>ООО «Базис» / Дмитрий Сорокин</div>
+              <div className={style.speaker}>
+                <div>ООО «Базис» /</div>
+                <div>
+                  Сорокин Дмитрий Анатольевич, технический директор <br />
+                  Сорокин Дмитрий Игоревич, рководитель блока разработки ядра
+                  платформы
+                </div>
+              </div>
               <div className={style.title_lecture}>
                 Построение высоконагруженных сред с применением виртуальной
                 инфраструктуры
@@ -149,7 +157,7 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ФСТЭК России / <strong>Виталий Сергеевич Лютиков</strong>,
+                ФСТЭК России / <strong>Виталий Сергеевич Лютиков,</strong>
                 заместитель директора
               </div>
               <div className={style.title_lecture}>
@@ -157,7 +165,7 @@ export const ScreenPrograms: FC = () => {
                 {/* <strong> / 12:00 — 15:30</strong> */}
               </div>
               <div className={style.speaker}>
-                ИСП РАН / <strong>Арутюн Ишханович Аветисян</strong>, директор,
+                ИСП РАН / <strong>Арутюн Ишханович Аветисян,</strong> директор,
                 академик РАН
               </div>
               <div className={style.title_lecture}>
@@ -186,13 +194,16 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                ООО «Профископ» / «CodeScoring» / Алексей Смирнов
+                ООО «Профископ» / «CodeScoring» / Алексей Алексеевич Смирнов,
+                генеральный директор
               </div>
               <div className={style.title_lecture}>
-                Композиционный анализ сторонних компонентов
+                Безопасное использование Open Source
                 {/* <strong> / 12:00 — 15:00</strong> */}
               </div>
-              <div className={style.speaker}>«Luntry» / Дмитрий Евдокимов</div>
+              <div className={style.speaker}>
+                «Luntry» / Дмитрий Сергеевич Евдокимов, генеральный директор
+              </div>
               <div className={style.title_lecture}>
                 Безопасность инфраструктур под управлением оркестратора
                 Kubernetes
