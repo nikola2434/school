@@ -358,7 +358,12 @@ export const ScreenPrograms: FC = () => {
               }
               typeFigure={null}
             >
-              <div className={style.description}>Уточняется</div>
+              <div className={style.description}>
+                Лекция рассмотрит тему оркестрации контейнеров и оркестратор
+                Kubernetes, даст возможность посмотреть как на устрйство данной
+                системы, так и на ее безопасность и безопасность контейнеров под
+                ее управлением
+              </div>
             </Collapse>
           </>
         </Collapse>
