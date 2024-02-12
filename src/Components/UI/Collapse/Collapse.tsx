@@ -2,7 +2,6 @@ import {
   FC,
   PropsWithChildren,
   ReactNode,
-  useEffect,
   useLayoutEffect,
   useRef,
   useState,
@@ -12,7 +11,7 @@ import cn from "classnames";
 
 // супер в падлу был0 делать что-то стоящее поэтому это
 
-type TypeFigure = 1 | 2 | 3 | 4 | 5 | 6;
+type TypeFigure = 1 | 2 | 3 | 4 | 5 | 6 | null;
 
 interface CollapseProps {
   label: ReactNode;
@@ -40,11 +39,23 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
   useLayoutEffect(() => {
     if (!contentElem.current) return;
 
+    let timer: null | ReturnType<typeof setTimeout> = null;
+
     if (!isActive) {
-      contentElem.current.style.height = null;
+      if (typeof timer === "number") timer = null;
+      contentElem.current.style.height =
+        contentElem.current.scrollHeight + "px";
+      setTimeout(() => {
+        contentElem.current.style.height = null;
+      }, 0);
     } else {
       contentElem.current.style.height =
         contentElem.current.scrollHeight + "px";
+
+      timer = setTimeout(() => {
+        if (!timer) return;
+        contentElem.current.style.height = "auto";
+      }, 350);
     }
   }, [isActive]);
 
@@ -72,64 +83,78 @@ export const Collapse: FC<PropsWithChildren<CollapseProps>> = ({
 
   return (
     <div className={style.bg_container}>
-      <div className={style.container} ref={containerElem}>
-        {typeFigure === 1 && <div className={style.type_1}></div>}
-        {typeFigure === 2 && (
-          <div className={style.type_2}>
-            <div className={style.type_2_1}>
-              <div></div>
+      {typeFigure && (
+        <div className={style.container} ref={containerElem}>
+          {typeFigure === 1 && <div className={style.type_1}></div>}
+          {typeFigure === 2 && (
+            <div className={style.type_2}>
+              <div className={style.type_2_1}>
+                <div></div>
+              </div>
+              <div className={style.type_2_1}>
+                <div />
+              </div>
+              <div className={style.type_2_1}>
+                <div />
+              </div>
             </div>
-            <div className={style.type_2_1}>
-              <div />
+          )}
+          {typeFigure === 3 && (
+            <div className={style.type_3}>
+              <div className={style.type_3_1}>
+                <div></div>
+              </div>
+              <div className={style.type_3_2}>
+                <div />
+              </div>
+              <div className={style.type_3_3}>
+                <div />
+              </div>
             </div>
-            <div className={style.type_2_1}>
-              <div />
+          )}
+          {typeFigure === 4 && (
+            <div className={style.type_4}>
+              <div className={style.type_4_1}></div>
+              <div className={style.type_4_2}>
+                <div></div>
+              </div>
             </div>
-          </div>
-        )}
-        {typeFigure === 3 && (
-          <div className={style.type_3}>
-            <div className={style.type_3_1}>
-              <div></div>
+          )}
+          {typeFigure === 5 && (
+            <div className={style.type_5}>
+              <div className={style.type_5_1}></div>
+              <div className={style.type_5_2}></div>
             </div>
-            <div className={style.type_3_2}>
-              <div />
+          )}
+          {typeFigure === 6 && (
+            <div className={style.type_6}>
+              <div className={style.type_6_1}>
+                <div />
+              </div>
+              <div className={style.type_6_2}>
+                <div />
+              </div>
             </div>
-            <div className={style.type_3_3}>
-              <div />
-            </div>
-          </div>
-        )}
-        {typeFigure === 4 && (
-          <div className={style.type_4}>
-            <div className={style.type_4_1}></div>
-            <div className={style.type_4_2}>
-              <div></div>
-            </div>
-          </div>
-        )}
-        {typeFigure === 5 && (
-          <div className={style.type_5}>
-            <div className={style.type_5_1}></div>
-            <div className={style.type_5_2}></div>
-          </div>
-        )}
-        {typeFigure === 6 && (
-          <div className={style.type_6}>
-            <div className={style.type_6_1}>
-              <div />
-            </div>
-            <div className={style.type_6_2}>
-              <div />
-            </div>
-          </div>
-        )}
-      </div>
-      <div className={cn(style.collapse, { [style.collapse_select]: select })}>
-        <div className={style.label} onClick={onClick} ref={labelElem}>
+          )}
+        </div>
+      )}
+      <div
+        className={cn(style.collapse, {
+          [style.collapse_select]: select,
+          [style.hidden]: !typeFigure,
+        })}
+      >
+        <div
+          className={cn(style.label, { [style.label_children]: !typeFigure })}
+          onClick={onClick}
+          ref={labelElem}
+        >
           {label}
           <span
-            className={cn(style.closeIcon, { [style.activeIcon]: isActive })}
+            className={cn(style.closeIcon, {
+              [style.activeIcon]: isActive,
+              [style.icon]: !typeFigure,
+            })}
           />
         </div>
         <div ref={contentElem} className={cn(style.content)}>

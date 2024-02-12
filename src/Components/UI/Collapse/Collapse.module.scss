@@ -4,7 +4,7 @@
   z-index: 100;
   background-color: transparent;
   margin-bottom: 20px;
-
+  transition: all 0.3s ease-in-out;
   .label {
     z-index: 100;
     cursor: pointer;
@@ -33,6 +33,7 @@
         width: 30px;
         height: 2px;
         background: currentColor;
+        box-sizing: border-box;
       }
       &::after {
         transform: rotate(90deg);
@@ -44,6 +45,15 @@
     .activeIcon {
       transform: rotate(-45deg);
     }
+
+    .icon {
+      //   right: 10px;
+      top: 0px;
+    }
+  }
+
+  .label_children {
+    padding: 0px;
   }
 
   .content {
@@ -280,6 +290,9 @@
         }
       }
     }
+    .label_children {
+      padding: 0px;
+    }
   }
   .bg_container {
     .container {
@@ -304,6 +317,9 @@
         }
       }
     }
+    .label_children {
+      padding: 0px;
+    }
   }
   .bg_container {
     .container {
@@ -314,4 +330,8 @@
 
 .collapse_select {
   border: 1px solid var(--hover_color);
+}
+
+.hidden {
+  border: none;
 }
