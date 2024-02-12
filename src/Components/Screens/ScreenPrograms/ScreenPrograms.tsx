@@ -33,8 +33,12 @@ export const ScreenPrograms: FC = () => {
                 {/* <strong> / 12:00 — 15:00</strong> */}
               </div>
               <div className={style.speaker}>
-                АО «Лаборатория Касперского» / Сергей Викторович Рогачев,
-                руководитель отдела разработки безопасной платформы
+                АО «Лаборатория Касперского» /
+                <div>
+                  Сергей Викторович Рогачев, руководитель отдела разработки
+                  безопасной платформы <br /> Дмитрий Владимирович Шмойлов,
+                  руководитель отдела безопасности программных продуктов
+                </div>
               </div>
               <div className={style.title_lecture}>
                 Микроядерные операционные системы. Summa Technologiae
@@ -125,7 +129,8 @@ export const ScreenPrograms: FC = () => {
           <>
             <div className={style.lecture_body}>
               <div className={style.speaker}>
-                «Axiom JDK» / Дмитрий Самерсов
+                «Axiom JDK» / Александр Дроздов, руководитель проектов
+                (содокладчик уточняется)
               </div>
               <div className={style.title_lecture}>
                 Java VM - внутреннее устройство и принципы работы
