@@ -78,7 +78,7 @@ export const ScreenPrograms: FC = () => {
             <>
               <div className={style.subtitle}>март, 4-ая неделя</div>
               <div className={style.title}>
-                Система управления базами данных
+                Системы управления базами данных
               </div>
             </>
           }
@@ -111,7 +111,8 @@ export const ScreenPrograms: FC = () => {
                     департамента развития системных продуктов
                   </div>
                   <div className={style.title_lecture}>
-                    Реляционные БД и их роль при построении безопасных ИС
+                    Реляционные базы данных и их роль при построении безопасных
+                    информационные системы
                     {/* <strong> / 15:30 — 18:30</strong> */}
                   </div>
                 </div>
@@ -119,7 +120,7 @@ export const ScreenPrograms: FC = () => {
               typeFigure={null}
             >
               <div className={style.description}>
-                Реляционные БД предоставляют множество проверенных и
+                Реляционные базы данных предоставляют множество проверенных и
                 сертифицированных механизмов для обеспечения защиты хранимых
                 данных, которые могут быть использованы при построении
                 Информационных Систем. Это избавляет разработчиков от
@@ -166,7 +167,7 @@ export const ScreenPrograms: FC = () => {
                     <div>ООО «Базис» /</div>
                     <div>
                       Сорокин Дмитрий Анатольевич, технический директор <br />
-                      Сорокин Дмитрий Игоревич, рководитель блока разработки
+                      Сорокин Дмитрий Игоревич, руководитель блока разработки
                       ядра платформы
                     </div>
                   </div>
@@ -201,8 +202,8 @@ export const ScreenPrograms: FC = () => {
               label={
                 <div className={style.lecture_body}>
                   <div className={style.speaker}>
-                    «Axiom JDK» / Александр Дроздов, руководитель проектов
-                    (содокладчик уточняется)
+                    «Axiom JDK» / Александр Сергеевич Дроздов, руководитель
+                    проектов (содокладчик уточняется)
                   </div>
                   <div className={style.title_lecture}>
                     Java VM - внутренний мир виртуальной машины, проблемы JIT
@@ -226,7 +227,8 @@ export const ScreenPrograms: FC = () => {
               label={
                 <div className={style.lecture_body}>
                   <div className={style.speaker}>
-                    Независимый open-source разработчик / Никита Соболев
+                    Независимый open-source разработчик / Никита Андреевич
+                    Соболев
                   </div>
                   <div className={style.title_lecture}>
                     Python - история создания, основные идеи и механизмы

@@ -2,7 +2,7 @@
   fill: var(--txt_color);
   box-sizing: border-box;
   color: var(--txt_color);
-  > svg {
+  > svg, img {
     margin-right: 16px;
   }
   cursor: pointer;
