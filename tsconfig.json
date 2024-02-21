@@ -13,7 +13,8 @@
     "paths": {
       "@screens/*": ["./src/Components/Screens*"],
       "@public/*": ["./public/*"],
-      "@hooks/*": ["./src/Utils/hooks/*"]
+      "@hooks/*": ["./src/Utils/hooks/*"],
+      "@utils/*": ["./src/Utils/*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },

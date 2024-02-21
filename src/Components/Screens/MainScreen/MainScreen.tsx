@@ -2,8 +2,10 @@ import { FC } from "react";
 import style from "./MainScreen.module.scss";
 import { MainButton } from "../../UI/MainButton";
 import { MainBackground } from "./MainBackground/MainBackground";
+import { getVars } from "@utils/URL/getVars";
 
 export const MainScreen: FC = () => {
+  const vars = getVars();
   return (
     <MainBackground>
       <div id="main" className={style.screen}>
@@ -17,7 +19,11 @@ export const MainScreen: FC = () => {
         </div>
         <div className={style.footer}>
           <MainButton
-            href="https://forms.yandex.ru/u/65ba63fbeb61460b91183250/"
+            href={
+              vars.from === "kaspersky"
+                ? "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/?utm_source=kaspersky"
+                : "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/"
+            }
             target="_blank"
           >
             Регистрация на курс

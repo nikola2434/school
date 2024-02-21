@@ -20,6 +20,7 @@ export default (env: BuildOptions) => {
       "@screens": path.resolve(__dirname, "src", "Components", "Screens"),
       "@public": path.resolve(__dirname, "public"),
       "@hooks": path.resolve(__dirname, "src", "Utils", "hooks"),
+      "@utils": path.resolve(__dirname, "src", "Utils"),
     },
   });
 
