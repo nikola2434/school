@@ -62,7 +62,7 @@ export const SpeakersScreen: FC = () => {
           <Postgres />
         </a>
         <a
-          href="https://www.kaspersky.ru/"
+          href="https://os.kaspersky.ru/development/"
           target="_blank"
           className={style.link}
         >

@@ -112,7 +112,7 @@ export const ScreenPrograms: FC = () => {
                   </div>
                   <div className={style.title_lecture}>
                     Реляционные базы данных и их роль при построении безопасных
-                    информационные системы
+                    информационных систем
                     {/* <strong> / 15:30 — 18:30</strong> */}
                   </div>
                 </div>
