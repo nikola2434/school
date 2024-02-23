@@ -5,6 +5,15 @@ import { getVars } from "@utils/URL/getVars";
 import { setVars } from "@utils/URL/setVars";
 
 export const Footer: FC = () => {
+  const urlTgBor =
+    typeof window.config?.URL_TG_BOT === "string"
+      ? window.config?.URL_TG_BOT
+      : "https://t.me/RBPO_bot/?start=start";
+
+  const urlForms =
+    typeof window.config?.URL_YA_FORM === "string"
+      ? window.config?.URL_YA_FORM
+      : "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/";
   return (
     <footer id="contacts" className={style.footer}>
       <div className={style.bg_container}>
@@ -18,7 +27,7 @@ export const Footer: FC = () => {
       <div className={style.container}>
         <div className={style.link}>
           <div>Чат-бот мероприятия</div>
-          <a href="https://t.me/RBPO_bot/?start=start" target="_blank">
+          <a href={urlTgBor} target="_blank">
             t.me/RBPO_bot
           </a>
         </div>
@@ -29,13 +38,7 @@ export const Footer: FC = () => {
           </a> */}
           <a href="mailto:sdl-school@bmstu.ru">sdl-school@bmstu.ru</a>
         </div>
-        <MainButton
-          href={setVars(
-            "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/",
-            getVars()
-          )}
-          target="_blank"
-        >
+        <MainButton href={setVars(urlForms, getVars())} target="_blank">
           Регистрация на курс
         </MainButton>
       </div>

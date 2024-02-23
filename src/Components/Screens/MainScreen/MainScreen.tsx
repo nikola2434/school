@@ -6,6 +6,10 @@ import { getVars } from "@utils/URL/getVars";
 import { setVars } from "@utils/URL/setVars";
 
 export const MainScreen: FC = () => {
+  const urlForms =
+    typeof window.config?.URL_YA_FORM === "string"
+      ? window.config?.URL_YA_FORM
+      : "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/";
   return (
     <MainBackground>
       <div id="main" className={style.screen}>
@@ -18,13 +22,7 @@ export const MainScreen: FC = () => {
           <span>от ведущих экспертов индустрии</span>
         </div>
         <div className={style.footer}>
-          <MainButton
-            href={setVars(
-              "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/",
-              getVars()
-            )}
-            target="_blank"
-          >
+          <MainButton href={setVars(urlForms, getVars())} target="_blank">
             Регистрация на курс
           </MainButton>
           <div className={style.container_info}>
