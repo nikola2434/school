@@ -2,9 +2,9 @@ import { FC } from "react";
 import style from "./Footer.module.scss";
 import { MainButton } from "../../UI/MainButton";
 import { getVars } from "@utils/URL/getVars";
+import { setVars } from "@utils/URL/setVars";
 
 export const Footer: FC = () => {
-  const vars = getVars();
   return (
     <footer id="contacts" className={style.footer}>
       <div className={style.bg_container}>
@@ -30,11 +30,10 @@ export const Footer: FC = () => {
           <a href="mailto:sdl-school@bmstu.ru">sdl-school@bmstu.ru</a>
         </div>
         <MainButton
-          href={
-            vars.from === "kaspersky"
-              ? "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/?utm_source=kaspersky"
-              : "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/"
-          }
+          href={setVars(
+            "https://forms.yandex.ru/u/65ba63fbeb61460b91183250/",
+            getVars()
+          )}
           target="_blank"
         >
           Регистрация на курс
