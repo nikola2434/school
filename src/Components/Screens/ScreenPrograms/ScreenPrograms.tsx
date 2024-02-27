@@ -32,7 +32,7 @@ export const ScreenPrograms: FC = () => {
                   <div className={style.title_lecture}>
                     Операционные системы на основе ядра Linux: сообщество,
                     дистрибутив, жизненный цикл
-                    {/* <strong> / 12:00 — 15:00</strong> */}
+                    <strong> / 11:00 — 13:00</strong>
                   </div>
                 </div>
               }
@@ -53,7 +53,7 @@ export const ScreenPrograms: FC = () => {
                   </div>
                   <div className={style.title_lecture}>
                     Микроядерные операционные системы. Summa Technologiae
-                    {/* <strong> / 15:30 — 18:30</strong> */}
+                    <strong> / 13:30 — 15:30</strong>
                   </div>
                 </div>
               }
@@ -95,7 +95,7 @@ export const ScreenPrograms: FC = () => {
                   </div>
                   <div className={style.title_lecture}>
                     Уточняется
-                    {/* <strong> / 12:00 - 15:00 </strong> */}
+                    <strong> / 11:00 - 13:00 </strong>
                   </div>
                 </div>
               }
@@ -113,7 +113,7 @@ export const ScreenPrograms: FC = () => {
                   <div className={style.title_lecture}>
                     Реляционные базы данных и их роль при построении безопасных
                     информационных систем
-                    {/* <strong> / 15:30 — 18:30</strong> */}
+                    <strong> / 13:30 — 15:30</strong>
                   </div>
                 </div>
               }
@@ -152,7 +152,7 @@ export const ScreenPrograms: FC = () => {
                   </div>
                   <div className={style.title_lecture}>
                     Контейнеризация и виртуализация - вчера, сегодня, завтра
-                    {/* <strong> / 12:00 — 15:00</strong> */}
+                    <strong> / 11:00 — 13:00</strong>
                   </div>
                 </div>
               }
@@ -174,7 +174,7 @@ export const ScreenPrograms: FC = () => {
                   <div className={style.title_lecture}>
                     Построение высоконагруженных сред с применением виртуальной
                     инфраструктуры
-                    {/* <strong> / 15:30 — 18:30</strong> */}
+                    <strong> / 13:30 — 15:30</strong>
                   </div>
                 </div>
               }
@@ -209,7 +209,7 @@ export const ScreenPrograms: FC = () => {
                     Java VM - внутренний мир виртуальной машины, проблемы JIT
                     компиляции и сборки мусора, организация процесса безопасной
                     разработки ПО
-                    {/* <strong> / 12:00 — 15:00</strong> */}
+                    <strong> / 11:00 — 13:00</strong>
                   </div>
                 </div>
               }
@@ -232,7 +232,7 @@ export const ScreenPrograms: FC = () => {
                   </div>
                   <div className={style.title_lecture}>
                     Python - история создания, основные идеи и механизмы
-                    {/* <strong> / 15:30 — 18:30</strong> */}
+                    <strong> / 13:30 — 15:30</strong>
                   </div>
                 </div>
               }
@@ -268,40 +268,27 @@ export const ScreenPrograms: FC = () => {
           typeFigure={5}
         >
           <>
-            <Collapse
-              label={
-                <div className={style.lecture_body}>
-                  <div className={style.speaker}>
-                    ФСТЭК России / <strong>Виталий Сергеевич Лютиков,</strong>
-                    заместитель директора
-                  </div>
-                  <div className={style.title_lecture}>
-                    Уточняется
-                    {/* <strong> / 12:00 — 15:30</strong> */}
-                  </div>
-                </div>
-              }
-              typeFigure={null}
-            >
-              <div className={style.description}>Уточняется</div>
-            </Collapse>
-            <Collapse
-              label={
-                <div className={style.lecture_body}>
-                  <div className={style.speaker}>
-                    ИСП РАН / <strong>Арутюн Ишханович Аветисян,</strong>{" "}
-                    директор, академик РАН
-                  </div>
-                  <div className={style.title_lecture}>
-                    Уточняется
-                    {/* <strong> / 15:30 — 18:30</strong> */}
-                  </div>
-                </div>
-              }
-              typeFigure={null}
-            >
-              <div className={style.description}>Уточняется</div>
-            </Collapse>
+            <div className={style.lecture_body}>
+              <div className={style.speaker}>
+                ФСТЭК России / <strong>Виталий Сергеевич Лютиков,</strong>
+                заместитель директора
+              </div>
+              <div className={style.title_lecture}>
+                Уточняется
+                <strong> / 11:00 — 13:00</strong>
+              </div>
+            </div>
+
+            <div className={style.lecture_body}>
+              <div className={style.speaker}>
+                ИСП РАН / <strong>Арутюн Ишханович Аветисян,</strong> директор,
+                академик РАН
+              </div>
+              <div className={style.title_lecture}>
+                Уточняется
+                <strong> / 13:30 — 15:30</strong>
+              </div>
+            </div>
           </>
         </Collapse>
         <h2>
@@ -330,7 +317,7 @@ export const ScreenPrograms: FC = () => {
                   </div>
                   <div className={style.title_lecture}>
                     Безопасное использование Open Source
-                    {/* <strong> / 12:00 — 15:00</strong> */}
+                    <strong> / 11:00 — 13:00</strong>
                   </div>
                 </div>
               }
@@ -352,7 +339,7 @@ export const ScreenPrograms: FC = () => {
                   <div className={style.title_lecture}>
                     Безопасность инфраструктур под управлением оркестратора
                     Kubernetes
-                    {/* <strong> / 15:30 — 18:30</strong> */}
+                    <strong> / 13:30 — 15:30</strong>
                   </div>
                 </div>
               }
