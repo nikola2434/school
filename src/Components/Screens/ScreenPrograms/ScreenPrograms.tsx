@@ -14,7 +14,7 @@ export const ScreenPrograms: FC = () => {
         <Collapse
           label={
             <>
-              <div className={style.subtitle}>март, 2-ая неделя</div>
+              <div className={style.subtitle}>5-го марта</div>
               <div className={style.title}>Операционные системы</div>
             </>
           }
