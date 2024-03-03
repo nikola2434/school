@@ -1,0 +1,23 @@
+.title {
+  font-size: 70px;
+  font-weight: 700;
+  padding: 20% 100px 0 100px;
+  text-transform: uppercase;
+  color: var(--txt_color);
+  > strong {
+    color: var(--hover_color);
+  }
+}
+
+@media (max-width: 850px) {
+  .title {
+    padding: 20% 50px 0px 50px;
+    font-size: 60px;
+  }
+}
+@media (max-width: 650px) {
+  .title {
+    padding: 20% 20px 0px 20px;
+    font-size: 45px;
+  }
+}

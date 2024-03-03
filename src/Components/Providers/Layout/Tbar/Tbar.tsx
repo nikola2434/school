@@ -3,11 +3,11 @@ import style from "./Tbar.module.scss";
 import { Logo } from "./Logo/Logo";
 import { Links } from "./Links/Links";
 
-export const Tbar: FC = () => {
+export const Tbar: FC<{ secondPage: boolean }> = ({ secondPage }) => {
   return (
     <header className={style.tbar}>
-      <Logo />
-      <Links />
+      <Logo secondPage={secondPage} />
+      <Links secondPage={secondPage} />
     </header>
   );
 };

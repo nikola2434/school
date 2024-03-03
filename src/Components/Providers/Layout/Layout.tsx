@@ -1,10 +1,13 @@
 import { FC, PropsWithChildren } from "react";
 import { Tbar } from "./Tbar";
 
-export const Layout: FC<PropsWithChildren> = ({ children }) => {
+export const Layout: FC<PropsWithChildren<{ secondPage: boolean }>> = ({
+  children,
+  secondPage,
+}) => {
   return (
     <main>
-      <Tbar />
+      <Tbar secondPage={secondPage} />
       {children}
     </main>
   );
