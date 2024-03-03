@@ -8,9 +8,9 @@ export const buildPlugins = (
   options: BuildOptions
 ): Configuration["plugins"] => {
   const isProd = options.mode === "production";
+  const html = options.paths.html;
 
   const plugins: Configuration["plugins"] = [
-    new HtmlWebpackPlugin({ template: options.paths.html }),
     new DefinePlugin({}),
     new CopyPlugin({
       patterns: [
@@ -22,13 +22,27 @@ export const buildPlugins = (
           from: "./public",
           to: ".",
           filter: (resourcePath) => {
-            if (resourcePath.includes("index.html")) return false;
+            if (resourcePath.includes(".html")) return false;
             return true;
           },
         },
       ],
     }),
   ];
+
+  if (typeof html === "string") {
+    plugins.push(new HtmlWebpackPlugin({ template: html }));
+  } else {
+    Object.entries(html).forEach(([name, path]) => {
+      plugins.push(
+        new HtmlWebpackPlugin({
+          template: path,
+          filename: `${name}.html`,
+          chunks: [name],
+        })
+      );
+    });
+  }
 
   if (!isProd) {
   }

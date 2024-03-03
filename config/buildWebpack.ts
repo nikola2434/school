@@ -16,7 +16,7 @@ export const buildWebpack = (options: BuildOptions): Configuration => {
     output: {
       path: output,
       clean: true,
-      filename: "bundle.js",
+      filename: "[name].js",
     },
 
     plugins: buildPlugins(options),

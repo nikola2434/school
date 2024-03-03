@@ -11,7 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@screens/*": ["./src/Components/Screens*"],
+      "@screens/*": ["./src/Components/Screens/*"],
       "@public/*": ["./public/*"],
       "@hooks/*": ["./src/Utils/hooks/*"],
       "@utils/*": ["./src/Utils/*"]

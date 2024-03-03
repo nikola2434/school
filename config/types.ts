@@ -1,6 +1,6 @@
 export interface BuildPaths {
-  entry: string;
-  html: string;
+  entry: string | Record<string, string>;
+  html: string | Record<string, string>;
   public: string;
   output: string;
   src: string;

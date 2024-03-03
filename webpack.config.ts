@@ -5,8 +5,14 @@ import { Configuration } from "webpack";
 
 export default (env: BuildOptions) => {
   const paths: BuildPaths = {
-    entry: path.resolve(__dirname, "index.tsx"),
-    html: path.resolve(__dirname, "public", "index.html"),
+    entry: {
+      index: path.resolve(__dirname, "index.tsx"),
+      confirm: path.resolve(__dirname, "confirm-index.tsx"),
+    },
+    html: {
+      index: path.resolve(__dirname, "public", "index.html"),
+      confirm: path.resolve(__dirname, "public", "confirm.html"),
+    },
     public: path.resolve(__dirname, "public"),
     src: path.resolve(__dirname, "src", "main.tsx"),
     output: path.resolve(__dirname, "build"),
