@@ -22,6 +22,10 @@
   .title {
     font-weight: 700;
     font-size: 40px;
+    > a {
+      font-size: 30px;
+      color: var(--hover_color);
+    }
   }
 
   .description {
@@ -80,6 +84,9 @@
     }
     .title {
       font-size: 24px;
+      > a {
+        font-size: 17px;
+      }
     }
     .description {
       padding: 0px 25px;
@@ -119,6 +126,9 @@
     }
     .title {
       font-size: 18px;
+      > a {
+        font-size: 14px;
+      }
     }
     .description {
       padding: 0px 15px;

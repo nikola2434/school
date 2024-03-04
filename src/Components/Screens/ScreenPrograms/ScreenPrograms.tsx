@@ -17,7 +17,16 @@ export const ScreenPrograms: FC = () => {
             label={
               <>
                 <div className={style.subtitle}>5-го марта</div>
-                <div className={style.title}>Операционные системы</div>
+                <div className={style.title}>
+                  Операционные системы
+                  {" "}
+                  <a
+                    href="https://rutube.ru/channel/35564652/about/"
+                    target="_blank"
+                  >
+                    (Смотреть трансляцию)
+                  </a>
+                </div>
               </>
             }
             open={false}
