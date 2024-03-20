@@ -18,14 +18,13 @@ export const ScreenPrograms: FC = () => {
               <>
                 <div className={style.subtitle}>5-го марта</div>
                 <div className={style.title}>
-                  Операционные системы
-                  {" "}
-                  <a
+                  Операционные системы{" "}
+                  {/* <a
                     href="https://rutube.ru/channel/35564652/about/"
                     target="_blank"
                   >
                     (Смотреть трансляцию)
-                  </a>
+                  </a> */}
                 </div>
               </>
             }
@@ -93,7 +92,7 @@ export const ScreenPrograms: FC = () => {
           <Collapse
             label={
               <>
-                <div className={style.subtitle}>март, 4-ая неделя</div>
+                <div className={style.subtitle}>27 марта</div>
                 <div className={style.title}>
                   Системы управления базами данных
                 </div>
