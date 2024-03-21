@@ -17,15 +17,7 @@ export const ScreenPrograms: FC = () => {
             label={
               <>
                 <div className={style.subtitle}>5-го марта</div>
-                <div className={style.title}>
-                  Операционные системы{" "}
-                  {/* <a
-                    href="https://rutube.ru/channel/35564652/about/"
-                    target="_blank"
-                  >
-                    (Смотреть трансляцию)
-                  </a> */}
-                </div>
+                <div className={style.title}>Операционные системы (прошел)</div>
               </>
             }
             open={false}
@@ -94,7 +86,13 @@ export const ScreenPrograms: FC = () => {
               <>
                 <div className={style.subtitle}>27 марта</div>
                 <div className={style.title}>
-                  Системы управления базами данных
+                  Системы управления базами данных{" "}
+                  <a
+                    href="https://rutube.ru/channel/35564652/about/"
+                    target="_blank"
+                  >
+                    (Смотреть трансляцию)
+                  </a>
                 </div>
               </>
             }
@@ -102,48 +100,45 @@ export const ScreenPrograms: FC = () => {
             typeFigure={2}
           >
             <>
+              <div className={style.lecture_body}>
+                <div className={style.speaker}>
+                  Postgres Professional / Иван Евгеньевич Панченко, заместитель
+                  генерального директора
+                </div>
+                <div className={style.title_lecture}>
+                  История и технологии СУБД на примере Postgres
+                  <strong> / 13:00 - 15:00 </strong>
+                </div>
+              </div>
+
               <Collapse
                 label={
                   <div className={style.lecture_body}>
                     <div className={style.speaker}>
-                      Postgres Professional / Иван Евгеньевич Панченко,
-                      заместитель генерального директора
+                      <div>Ред Софт /</div>
+                      <div>
+                        Дмитрий Еманов, архитектор СУБД; <br />
+                        Роман Симаков, директор департамента развития системных
+                        продуктов
+                      </div>
                     </div>
                     <div className={style.title_lecture}>
-                      Уточняется
-                      <strong> / 11:00 - 13:00 </strong>
-                    </div>
-                  </div>
-                }
-                typeFigure={null}
-              >
-                <div className={style.description}>Уточняется</div>
-              </Collapse>
-              <Collapse
-                label={
-                  <div className={style.lecture_body}>
-                    <div className={style.speaker}>
-                      ООО «Ред Софт» / Роман Александрович Симаков, директор
-                      департамента развития системных продуктов
-                    </div>
-                    <div className={style.title_lecture}>
-                      Реляционные базы данных и их роль при построении
-                      безопасных информационных систем
-                      <strong> / 13:30 — 15:30</strong>
+                      Реляционные СУБД: технологическая эволюция, особенности
+                      реализации и практические аспекты безопасности
+                      <strong> / 15:30 — 17:30</strong>
                     </div>
                   </div>
                 }
                 typeFigure={null}
               >
                 <div className={style.description}>
-                  Реляционные базы данных предоставляют множество проверенных и
-                  сертифицированных механизмов для обеспечения защиты хранимых
-                  данных, которые могут быть использованы при построении
-                  Информационных Систем. Это избавляет разработчиков от
-                  необходимости самостоятельной реализации и значительно снижает
-                  стоимость и сроки проектов. В лекции будут рассмотрены базовые
-                  механизмы защиты данных, предоставляемые СУБД и особенности их
-                  реализации и применения
+                  Реляционные базы данных имеют богатую историю развития и
+                  иногда по-разному реализуют решения тех или иных задач. В
+                  докладе будут рассмотрены некоторые из таких технологий,
+                  особенности реализации в разных СУБД и аспекты безопасности,
+                  связанные с ними. Доклад осветит практический опыт реализации
+                  безопасной разработки СУБД, подходы к разработке безопасной
+                  СУБД.
                 </div>
               </Collapse>
             </>
