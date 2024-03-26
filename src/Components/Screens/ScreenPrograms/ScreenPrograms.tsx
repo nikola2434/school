@@ -100,16 +100,31 @@ export const ScreenPrograms: FC = () => {
             typeFigure={2}
           >
             <>
-              <div className={style.lecture_body}>
-                <div className={style.speaker}>
-                  Postgres Professional / Иван Евгеньевич Панченко, заместитель
-                  генерального директора
+              <Collapse
+                label={
+                  <div className={style.lecture_body}>
+                    <div className={style.speaker}>
+                      Postgres Professional / Иван Евгеньевич Панченко,
+                      заместитель генерального директора
+                    </div>
+                    <div className={style.title_lecture}>
+                      История и технологии СУБД на примере Postgres
+                      <strong> / 13:00 - 15:00</strong>
+                    </div>
+                  </div>
+                }
+                typeFigure={null}
+              >
+                <div className={style.description}>
+                  Рассмотрим бурную историю развития СУБД от самого начала до
+                  сегодняшних дней. В центре повествования будет Postgres -
+                  наверное, самая российская из универсальных СУБД мирового
+                  масштаба. Поймём, как зарождались или выбирались те или иные
+                  технологические решения, как работает над СУБД международное
+                  сообщество и корпорации, и какие факторы приводят к изменению
+                  этих процессов и их результата.
                 </div>
-                <div className={style.title_lecture}>
-                  История и технологии СУБД на примере Postgres
-                  <strong> / 13:00 - 15:00 </strong>
-                </div>
-              </div>
+              </Collapse>
 
               <Collapse
                 label={
@@ -117,9 +132,9 @@ export const ScreenPrograms: FC = () => {
                     <div className={style.speaker}>
                       <div>Ред Софт /</div>
                       <div>
-                        Дмитрий Еманов, архитектор СУБД; <br />
-                        Роман Симаков, директор департамента развития системных
-                        продуктов
+                        Дмитрий Витальевич Еманов, архитектор СУБД; <br />
+                        Роман Александрович Симаков, директор департамента
+                        развития системных продуктов
                       </div>
                     </div>
                     <div className={style.title_lecture}>
@@ -138,7 +153,7 @@ export const ScreenPrograms: FC = () => {
                   особенности реализации в разных СУБД и аспекты безопасности,
                   связанные с ними. Доклад осветит практический опыт реализации
                   безопасной разработки СУБД, подходы к разработке безопасной
-                  СУБД.
+                  СУБД
                 </div>
               </Collapse>
             </>
@@ -146,7 +161,7 @@ export const ScreenPrograms: FC = () => {
           <Collapse
             label={
               <>
-                <div className={style.subtitle}>апрель, 2-ая неделя</div>
+                <div className={style.subtitle}>11 апреля</div>
                 <div className={style.title}>
                   Виртуализация и контейнеризация
                 </div>
@@ -165,7 +180,7 @@ export const ScreenPrograms: FC = () => {
                     </div>
                     <div className={style.title_lecture}>
                       Контейнеризация и виртуализация - вчера, сегодня, завтра
-                      <strong> / 11:00 — 13:00</strong>
+                      <strong> / 14:00 — 16:00</strong>
                     </div>
                   </div>
                 }
@@ -179,15 +194,16 @@ export const ScreenPrograms: FC = () => {
                     <div className={style.speaker}>
                       <div>ООО «Базис» /</div>
                       <div>
-                        Сорокин Дмитрий Анатольевич, технический директор <br />
-                        Сорокин Дмитрий Игоревич, руководитель блока разработки
-                        ядра платформы
+                        Дмитрий Анатольевич Сорокин, технический директор <br />
+                        Александр Васильевич Иванин, руководитель отдела
+                        архитектурных решений <br />
+                        Натали Дмитриевна Дуботолкова, старший инженер по РБПО
                       </div>
                     </div>
                     <div className={style.title_lecture}>
                       Построение высоконагруженных сред с применением
                       виртуальной инфраструктуры
-                      <strong> / 13:30 — 15:30</strong>
+                      <strong> / 16:30 — 18:30</strong>
                     </div>
                   </div>
                 }
