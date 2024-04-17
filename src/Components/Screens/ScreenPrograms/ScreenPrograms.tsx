@@ -229,7 +229,7 @@ export const ScreenPrograms: FC = () => {
           <Collapse
             label={
               <>
-                <div className={style.subtitle}>апрель, 4-ая неделя</div>
+                <div className={style.subtitle}>22 апреля</div>
                 <div className={style.title}>Интерпретаторы</div>
               </>
             }
@@ -241,14 +241,14 @@ export const ScreenPrograms: FC = () => {
                 label={
                   <div className={style.lecture_body}>
                     <div className={style.speaker}>
-                      «Axiom JDK» / Александр Сергеевич Дроздов, руководитель
-                      проектов (содокладчик уточняется)
+                      «Axiom JDK» / Александр Сергеевич Дроздов, инженер по РБПО
+                      и информационной безопасности «Axiom JDK»
                     </div>
                     <div className={style.title_lecture}>
-                      Java VM - внутренний мир виртуальной машины, проблемы JIT
-                      компиляции и сборки мусора, организация процесса
+                      Java VM - внутренний мир виртуальной машины, проблемы
+                      JIT-компиляции и сборки мусора, организация процесса
                       безопасной разработки ПО
-                      <strong> / 11:00 — 13:00</strong>
+                      <strong> / 14:00 — 16:00</strong>
                     </div>
                   </div>
                 }
@@ -256,11 +256,11 @@ export const ScreenPrograms: FC = () => {
               >
                 <div className={style.description}>
                   Расскажем почему Java завоевала такую популярность, как
-                  сочетаются интерпретатор и компилятор, что такое JIT
-                  компиляция и какие в ней есть подводные камни, как происходит
-                  сборка мусора и почему в Java много разных коллекторов.
-                  Отдельно поговорим про мониторинг, отладку и безопасную
-                  разработку Java-приложений
+                  сочетаются интерпретатор и компилятор, что такое
+                  JIT-компиляция и какие в ней есть подводные камни, как
+                  происходит сборка мусора и почему в Java много разных
+                  коллекторов. Отдельно поговорим про мониторинг, отладку и
+                  безопасную разработку Java-приложений
                 </div>
               </Collapse>
               <Collapse
@@ -272,7 +272,7 @@ export const ScreenPrograms: FC = () => {
                     </div>
                     <div className={style.title_lecture}>
                       Python - история создания, основные идеи и механизмы
-                      <strong> / 13:30 — 15:30</strong>
+                      <strong> / 16:30 — 18:30</strong>
                     </div>
                   </div>
                 }
