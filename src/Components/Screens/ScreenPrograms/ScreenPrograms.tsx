@@ -8,10 +8,6 @@ export const ScreenPrograms: FC = () => {
       <a id="programs"></a>
       <section className={style.screen}>
         <h1>программа</h1>
-        <h2>
-          Блок 1. Системное программное обеспечение. Фундаментальные технологии
-          сквозь призму безопасной разработки
-        </h2>
         <div>
           <Collapse
             label={
@@ -86,13 +82,7 @@ export const ScreenPrograms: FC = () => {
               <>
                 <div className={style.subtitle}>27 марта</div>
                 <div className={style.title}>
-                  Системы управления базами данных{" "}
-                  <a
-                    href="https://rutube.ru/channel/35564652/about/"
-                    target="_blank"
-                  >
-                    (Смотреть трансляцию)
-                  </a>
+                  Системы управления базами данных
                 </div>
               </>
             }
@@ -298,7 +288,73 @@ export const ScreenPrograms: FC = () => {
           <Collapse
             label={
               <>
-                <div className={style.subtitle}>май, 2-ая неделя</div>
+                <div className={style.subtitle}>27 мая</div>
+                <div className={style.title}>
+                  Композиционный и компонентный анализ{" "}
+                  <a
+                    href="https://rutube.ru/channel/35564652/about/"
+                    target="_blank"
+                  >
+                    (Смотреть)
+                  </a>
+                </div>
+              </>
+            }
+            open={false}
+            typeFigure={6}
+          >
+            <>
+              <Collapse
+                label={
+                  <div className={style.lecture_body}>
+                    <div className={style.speaker}>
+                      «Luntry» / Дмитрий Сергеевич Евдокимов, генеральный
+                      директор
+                    </div>
+                    <div className={style.title_lecture}>
+                      Безопасность инфраструктур под управлением оркестратора
+                      Kubernetes
+                      <strong> / 14:00 — 16:00</strong>
+                    </div>
+                  </div>
+                }
+                typeFigure={null}
+              >
+                <div className={style.description}>
+                  Лекция рассмотрит тему оркестрации контейнеров и оркестратор
+                  Kubernetes, даст возможность посмотреть как на устрйство
+                  данной системы, так и на ее безопасность и безопасность
+                  контейнеров под ее управлением
+                </div>
+              </Collapse>
+              <Collapse
+                label={
+                  <div className={style.lecture_body}>
+                    <div className={style.speaker}>
+                      ООО «Профископ» / «CodeScoring» / Алексей Алексеевич
+                      Смирнов, генеральный директор
+                    </div>
+                    <div className={style.title_lecture}>
+                      Безопасное использование Open Source
+                      <strong> / 16:30 — 18:30</strong>
+                    </div>
+                  </div>
+                }
+                typeFigure={null}
+              >
+                <div className={style.description}>
+                  В лекции будут раскрыты вопросы безопасносного использования
+                  Open Source компонентов: от постановки вопроса, до конкретных
+                  инструментальных возможностей и описаний процессов их
+                  применения.
+                </div>
+              </Collapse>
+            </>
+          </Collapse>
+          <Collapse
+            label={
+              <>
+                <div className={style.subtitle}>июнь</div>
                 <div className={style.title}>
                   Разработка безопасного программного обеспечения
                 </div>
@@ -330,70 +386,6 @@ export const ScreenPrograms: FC = () => {
                   <strong> / 13:30 — 15:30</strong>
                 </div>
               </div>
-            </>
-          </Collapse>
-          <h2>
-            Блок 2. Практическая безопасность программного обеспечения и
-            информационных систем
-          </h2>
-          <Collapse
-            label={
-              <>
-                <div className={style.subtitle}>май, 4-ая неделя</div>
-                <div className={style.title}>
-                  Композиционный и компонентный анализ
-                </div>
-              </>
-            }
-            open={false}
-            typeFigure={6}
-          >
-            <>
-              <Collapse
-                label={
-                  <div className={style.lecture_body}>
-                    <div className={style.speaker}>
-                      ООО «Профископ» / «CodeScoring» / Алексей Алексеевич
-                      Смирнов, генеральный директор
-                    </div>
-                    <div className={style.title_lecture}>
-                      Безопасное использование Open Source
-                      <strong> / 11:00 — 13:00</strong>
-                    </div>
-                  </div>
-                }
-                typeFigure={null}
-              >
-                <div className={style.description}>
-                  В лекции будут раскрыты вопросы безопасносного использования
-                  Open Source компонентов: от постановки вопроса, до конкретных
-                  инструментальных возможностей и описаний процессов их
-                  применения.
-                </div>
-              </Collapse>
-              <Collapse
-                label={
-                  <div className={style.lecture_body}>
-                    <div className={style.speaker}>
-                      «Luntry» / Дмитрий Сергеевич Евдокимов, генеральный
-                      директор
-                    </div>
-                    <div className={style.title_lecture}>
-                      Безопасность инфраструктур под управлением оркестратора
-                      Kubernetes
-                      <strong> / 13:30 — 15:30</strong>
-                    </div>
-                  </div>
-                }
-                typeFigure={null}
-              >
-                <div className={style.description}>
-                  Лекция рассмотрит тему оркестрации контейнеров и оркестратор
-                  Kubernetes, даст возможность посмотреть как на устрйство
-                  данной системы, так и на ее безопасность и безопасность
-                  контейнеров под ее управлением
-                </div>
-              </Collapse>
             </>
           </Collapse>
         </div>
