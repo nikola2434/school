@@ -308,6 +308,28 @@ export const ScreenPrograms: FC = () => {
                 label={
                   <div className={style.lecture_body}>
                     <div className={style.speaker}>
+                      ООО «Профископ» / «CodeScoring» / Алексей Алексеевич
+                      Смирнов, генеральный директор
+                    </div>
+                    <div className={style.title_lecture}>
+                      Безопасное использование Open Source
+                      <strong> / 11:30 — 13:30</strong>
+                    </div>
+                  </div>
+                }
+                typeFigure={null}
+              >
+                <div className={style.description}>
+                  В лекции будут раскрыты вопросы безопасносного использования
+                  Open Source компонентов: от постановки вопроса, до конкретных
+                  инструментальных возможностей и описаний процессов их
+                  применения.
+                </div>
+              </Collapse>
+              <Collapse
+                label={
+                  <div className={style.lecture_body}>
+                    <div className={style.speaker}>
                       «Luntry» / Дмитрий Сергеевич Евдокимов, генеральный
                       директор
                     </div>
@@ -325,28 +347,6 @@ export const ScreenPrograms: FC = () => {
                   Kubernetes, даст возможность посмотреть как на устрйство
                   данной системы, так и на ее безопасность и безопасность
                   контейнеров под ее управлением
-                </div>
-              </Collapse>
-              <Collapse
-                label={
-                  <div className={style.lecture_body}>
-                    <div className={style.speaker}>
-                      ООО «Профископ» / «CodeScoring» / Алексей Алексеевич
-                      Смирнов, генеральный директор
-                    </div>
-                    <div className={style.title_lecture}>
-                      Безопасное использование Open Source
-                      <strong> / 16:30 — 18:30</strong>
-                    </div>
-                  </div>
-                }
-                typeFigure={null}
-              >
-                <div className={style.description}>
-                  В лекции будут раскрыты вопросы безопасносного использования
-                  Open Source компонентов: от постановки вопроса, до конкретных
-                  инструментальных возможностей и описаний процессов их
-                  применения.
                 </div>
               </Collapse>
             </>
